@@ -11,6 +11,7 @@ body {
 }
 nav {
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0.5rem 0.1rem gray;
     margin: 1rem auto;
     padding: 0.5rem;
     width: fit-content;
@@ -24,9 +25,16 @@ nav {
     cursor: pointer;
 
     width: fit-content;
+
+    transition: background-color, color;
+    transition-duration: 0.2s;
 }
 .corpus-article:hover {
-    color:teal;
+    background-color: #444;
+    color: #FFF;
+
+    transition: background-color, color;
+    transition-duration: 0.1s;
 }
 .ca-text::before {content: "📄";}
 .ca-quest::before {content: "❗️";}
