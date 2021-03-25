@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "HanyiCJKL";
+    src: url("../../font/HanyiCJKLATIN.ttf");
+}
+
 header {
     font-family: serif;
     color: #222;
@@ -5,4 +10,7 @@ header {
 .category-link {
     font-family: serif;
     color: #222;
+}
+.corpus-article {
+    font-family: serif;
 }

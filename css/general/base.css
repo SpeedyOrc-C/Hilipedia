@@ -1,4 +1,34 @@
+a { text-decoration: none;}
+a:visited {color: unset;}
+
+header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+}
 body {
     margin: 0;
     background-color: #fce6c1;
 }
+nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+}
+
+.corpus-article {
+    user-select: none;
+    white-space: pre;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    width: fit-content;
+}
+.corpus-article:hover {
+    color:teal;
+}
+.ca-text::before {content: "📄";}
+.ca-quest::before {content: "❗️";}
+.ca-bbs::before{content: "💬";}
