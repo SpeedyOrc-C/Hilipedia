@@ -1,5 +1,4 @@
-a { text-decoration: none;}
-a:visited {color: unset;}
+a { text-decoration: none; color: unset;}
 
 header {
     background-color: rgba(255, 255, 255, 0.5);
