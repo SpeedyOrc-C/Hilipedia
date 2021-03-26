@@ -4,9 +4,15 @@
 }
 
 header {
-    font-family: serif;
+    font-family: HanyiCJKL, Georgia, serif;
     color: #222;
 }
+
+#welcome-banner {
+    font-family: serif;
+    font-weight: bold;
+}
+
 .category-link {
     font-family: serif;
     color: #222;
@@ -14,6 +20,6 @@ header {
 .corpus-article {
     font-family: serif;
 }
-.corpus-article-legend {
+.corpus-article-legend, .dictionary-legend {
     font-family: sans-serif;
 }

@@ -1,3 +1,22 @@
+#goto-github-link {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 1rem;
+}
+
+#welcome-banner {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    width: fit-content;
+    width: -moz-fit-content;
+
+    border-left: 3px solid #555;
+    border-right: 3px solid #555;
+
+    font-size: 2rem;
+}
+
 .category-link {
     display: inline-block;
     margin: 1rem;

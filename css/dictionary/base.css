@@ -1,0 +1,36 @@
+#dictionary-proper {
+    background-color: rgba(255, 255, 255, 0.6);
+
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.the-word {
+    font-size: 1.5rem;
+    color: #222;
+}
+.word-definitions {
+    text-indent: 0.5rem;
+}
+.part-of-speech {
+    display: inline-block;
+    color: #888;
+}
+.translation {
+    display: inline-block;
+}
+.word-status { display: inline-block }
+.word-status-none { color: #ccc }
+.word-status-folk { color: #777 }
+.word-status-official { color: #222 }
+
+.dictionary-legend {
+    background-color: rgba(255, 255, 255, 0.6);
+
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+
+    user-select: none;
+}
