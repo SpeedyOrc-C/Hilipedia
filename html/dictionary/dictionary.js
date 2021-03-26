@@ -158,7 +158,7 @@ var DICTIONARY = {
 			"eg":[], "status":0},
 		"zido":{
 			"def":[{"pos":"", "zh":""}],
-			"eg":[]}
+			"eg":[], "status":0}
 	},
 	"posAbbr":{
 		"adj":{"zh":"形"},
