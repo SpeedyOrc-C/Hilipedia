@@ -4,6 +4,12 @@
     top: 1.5rem;
     font-size: 1rem;
 }
+#goto-gitee-link {
+    position: absolute;
+    right: 8rem;
+    top: 1.5rem;
+    font-size: 1rem;
+}
 
 #welcome-banner {
     margin: 1rem auto;
