@@ -42,8 +42,10 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"gusha":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[
+				{"pos":"n", "zh":"草; 水果; 谷物"},
+				{"pos":"adj", "zh":"喜好上不好的"}],
+			"eg":[], "status":2},
 		"ika":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -150,6 +152,9 @@ var DICTIONARY = {
 		"ye":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
+		"yeye":{
+			"def":[{"pos":"", "zh":""}],
+			"eg":[], "status":0},
 		"yo":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -186,7 +191,7 @@ WORDS.forEach(function(word) {
     console.log(status);
 
     document.write(`
-    <div class="single-word">
+    <div class="single-word" the-word="${word}">
         <div class="the-word word-status-${status}">
             ${word}
         </div>
