@@ -9,36 +9,13 @@ header {
 }
 body {
     margin: 0;
-    background-color: #fce6c1;
+    background-color: rgb(224, 216, 200);
 }
 nav {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgb(248, 241, 226);
     box-shadow: 0 0 0.5rem 0.1rem gray;
     margin: 1rem auto;
     padding: 1rem;
     width: fit-content;
     width: -moz-fit-content;
 }
-
-.corpus-article {
-    user-select: none;
-    white-space: pre;
-    font-size: 1.2rem;
-
-    cursor: pointer;
-
-    width: fit-content;
-
-    transition: background-color, color;
-    transition-duration: 0.2s;
-}
-.corpus-article:hover {
-    background-color: #444;
-    color: #FFF;
-
-    transition: background-color, color;
-    transition-duration: 0.1s;
-}
-.ca-text::before {content: "📄";}
-.ca-quest::before {content: "❗️";}
-.ca-bbs::before{content: "💬";}

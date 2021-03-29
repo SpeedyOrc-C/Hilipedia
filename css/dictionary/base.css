@@ -1,9 +1,15 @@
 #dictionary-proper {
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0.5rem 0.1rem gray;
 
     margin: 1rem auto;
     padding: 1rem;
-    width: 20rem;
+    width: 40rem;
+}
+
+.single-word {
+    display: inline-block;
+    width: 49%;
 }
 
 .the-word {

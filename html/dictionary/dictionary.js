@@ -214,7 +214,7 @@ WORDS.forEach(function(word) {
     document.write(`
         </div>
     </div>
-    <hr/>
+    
     `)
 
 })

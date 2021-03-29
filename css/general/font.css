@@ -23,3 +23,7 @@ header {
 .corpus-article-legend, .dictionary-legend {
     font-family: sans-serif;
 }
+
+.the-word {
+    font-family: HanyiCJKL, Georgia, serif;
+}

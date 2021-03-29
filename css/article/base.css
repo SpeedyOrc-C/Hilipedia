@@ -1,3 +1,58 @@
+body {
+    background-color: rgb(224, 216, 200);
+}
+
+article {
+    background-color: rgb(248, 241, 226);
+    box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
+    width: 43rem;
+    margin: 2rem auto;
+    padding: 1rem 4rem;
+}
+
+h1, h2, p, blockquote {
+    color: #222;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1.1rem;
+}
+blockquote {
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5rem;
+    width: fit-content;
+}
+
+.corpus-article {
+    user-select: none;
+    white-space: pre;
+    font-size: 1.2rem;
+
+    cursor: pointer;
+
+    width: fit-content;
+
+    transition: background-color, color;
+    transition-duration: 0.2s;
+}
+.corpus-article:hover {
+    background-color: #444;
+    color: #FFF;
+
+    transition: background-color, color;
+    transition-duration: 0.1s;
+}
+.ca-text::before {content: "📄";}
+.ca-book::before {content: "📖"}
+.ca-quest::before {content: "❗️";}
+.ca-bbs::before{content: "💬";}
+
 .corpus-article-legend {
     background-color: rgba(255, 255, 255, 0.6);
 
