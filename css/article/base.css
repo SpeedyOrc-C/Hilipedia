@@ -11,20 +11,22 @@ article {
 }
 
 h1, h2, p, blockquote {
-    color: #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    border-bottom: 1px solid #0003;
 }
 h2 {
     font-size: 1.5rem;
 }
 p {
     font-size: 1.1rem;
+    line-height: 1.8rem;
 }
 blockquote {
     font-size: 1.1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.5rem;
     width: fit-content;
 }
