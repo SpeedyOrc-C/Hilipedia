@@ -39,6 +39,7 @@ blockquote {
     cursor: pointer;
 
     width: fit-content;
+    padding: 0.2rem 0.5rem;
 
     transition: background-color, color;
     transition-duration: 0.2s;

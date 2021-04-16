@@ -188,6 +188,7 @@ WORDS.forEach(function(word) {
     if (WORD["status"] == 0) status = "none"
     else if (WORD["status"] == 1) status = "folk"
     else if (WORD["status"] == 2) status = "official"
+	else if (WORD["status"] == 3) status = "official-sus"
     console.log(status);
 
     document.write(`

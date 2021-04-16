@@ -9,19 +9,19 @@ header {
 }
 
 #welcome-banner {
-    font-family: serif;
+    font-family: Georgia, serif;
     font-weight: bold;
 }
 
 .category-link {
-    font-family: serif;
+    font-family: Georgia, serif;
     color: #222;
 }
 .corpus-article {
-    font-family: serif;
+    font-family: Georgia, serif;
 }
 .corpus-article-legend, .dictionary-legend {
-    font-family: sans-serif;
+    font-family: Georgia, sans-serif;
 }
 
 .the-word {

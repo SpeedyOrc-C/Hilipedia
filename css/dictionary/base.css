@@ -30,6 +30,8 @@
 .word-status-none { color: #ccc }
 .word-status-folk { color: #777 }
 .word-status-official { color: #222 }
+.word-status-official-sus { color: #222 }
+.word-status-official-sus::after { content: "*"; }
 
 .dictionary-legend {
     background-color: rgba(255, 255, 255, 0.6);
