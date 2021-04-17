@@ -25,5 +25,8 @@ header {
 }
 
 .the-word {
-    font-family: HanyiCJKL, Georgia, serif;
+    font-family: Georgia, serif;
+}
+.example-hilichurlian {
+    font-family: Georgia, serif;
 }

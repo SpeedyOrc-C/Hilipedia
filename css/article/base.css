@@ -10,7 +10,7 @@ article {
     padding: 1rem 4rem;
 }
 
-h1, h2, p, blockquote {
+h1, h2, h3, p, blockquote {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
 }
@@ -19,7 +19,10 @@ h1 {
     border-bottom: 1px solid #0003;
 }
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+h3 {
+    font-size: 1.4rem;
 }
 p {
     font-size: 1.1rem;

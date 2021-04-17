@@ -3,6 +3,7 @@
     box-shadow: 0 0 0.5rem 0.1rem gray;
 
     margin: 1rem auto;
+    border-radius: 0.3rem;
     padding: 1rem;
     width: 40rem;
 }
@@ -16,7 +17,7 @@
     font-size: 1.5rem;
     color: #222;
 }
-.word-definitions {
+.word-definitions, .word-examples {
     text-indent: 0.5rem;
 }
 .part-of-speech {
@@ -26,12 +27,24 @@
 .translation {
     display: inline-block;
 }
+
 .word-status { display: inline-block }
 .word-status-none { color: #ccc }
 .word-status-folk { color: #777 }
 .word-status-official { color: #222 }
 .word-status-official-sus { color: #222 }
 .word-status-official-sus::after { content: "*"; }
+
+.example-hilichurlian {
+    display: inline-block;
+}
+.example-translation {
+    display: inline-block;
+}
+.example-comment {
+    text-indent: 1.5rem;
+}
+
 
 .dictionary-legend {
     background-color: rgba(255, 255, 255, 0.6);
