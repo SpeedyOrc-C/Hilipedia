@@ -5,12 +5,11 @@
     margin: 1rem auto;
     border-radius: 0.3rem;
     padding: 1rem;
-    width: 40rem;
+    width: 30rem;
 }
 
 .single-word {
-    display: inline-block;
-    width: 49%;
+    display: block;
 }
 
 .the-word {
@@ -40,9 +39,12 @@
 }
 .example-translation {
     display: inline-block;
+    font-size: 0.9rem;
 }
 .example-comment {
     text-indent: 1.5rem;
+    font-size: 0.8rem;
+    color: #777;
 }
 
 

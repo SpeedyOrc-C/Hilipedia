@@ -12,6 +12,9 @@ var DICTIONARY = {
 		"biadam":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
+		"biaodomu":{
+			"def":[{"pos":"", "zh":""}],
+			"eg":[], "status":0},
 		"biat":{
 			"def":[{"pos":"int", "zh":"它妈的"}],
 			"eg":[], "status":1},
@@ -90,6 +93,9 @@ var DICTIONARY = {
 		"ika":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
+		"in":{
+			"def":[{"pos":"", "zh":""}],
+			"eg":[], "status":0},
 		"ka":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -142,11 +148,36 @@ var DICTIONARY = {
 					"hil":"Mosi gusha",
 					"zh":"伤心",
 					"comment":"丘丘人喜欢吃肉而不喜欢吃蔬菜。"
+				},
+				{
+					"hil":"mosi dada",
+					"zh":"午餐",
+					"comment":"午餐的饭会好吃吗？"
+				},
+				{
+					"hil":"aba mosi dada",
+					"zh":"上午",
+					"comment":"起床到午餐前的时间"
+				},
+				{
+					"hil":"unta mosi dada",
+					"zh":"下午",
+					"comment":"午餐后到日落前的时间",
+				},
+				{
+					"hil":"mosi aba nunu",
+					"zh":"晚餐",
+					"comment":"吃睡觉前的饭的时间"
+				},
+				{
+					"hil":"unta nunu",
+					"zh":"深夜",
+					"comment":"睡觉之后的时间"
 				}
 			], "status":2},
 		"movo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"v", "zh":"移动"}],
+			"eg":[], "status":1},
 		"muhe":{
 			"def":[{"pos":"v", "zh":"喜欢; 想要"}],
 			"eg":[], "status":3},
@@ -173,7 +204,7 @@ var DICTIONARY = {
 			"eg":[], "status":0},
 		"sada":{
 			"def":[
-				{"pos":"n", "zh":"固体"},
+				{"pos":"n", "zh":"固体; 岩石"},
 				{"pos":"adj", "zh":"硬的"},
 			],
 			"eg":[], "status":3},
@@ -205,6 +236,9 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"原初之物"},
 			],
 			"eg":[], "status":3},
+		"unu du":{
+			"def":[{"pos":"n", "zh":"三"}],
+			"eg":[], "status":3},
 		"upa":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -218,11 +252,11 @@ var DICTIONARY = {
 			"def":[{"pos":"v", "zh":"防止"}],
 			"eg":[], "status":1},
 		"ya":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"一个"}],
+			"eg":[], "status":3},
 		"yaya":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"一群"}],
+			"eg":[], "status":3},
 		"ye":{
 			"def":[{"pos":"pron", "zh":"你"}],
 			"eg":[], "status":1},
@@ -230,11 +264,11 @@ var DICTIONARY = {
 			"def":[{"pos":"pron", "zh":"你们"}],
 			"eg":[], "status":1},
 		"yo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"pron", "zh":"你"}],
+			"eg":[], "status":1},
 		"yoyo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"pron", "zh":"你们"}],
+			"eg":[], "status":1},
 		"zido":{
 			"def":[{"pos":"n", "zh":"东西"}],
 			"eg":[], "status":3}
@@ -261,11 +295,13 @@ WORDS.forEach(function(word) {
     
     var WORD = PROPER[word]
     var status = ""
-    if (WORD["status"] == 0) status = "none"
+    if (WORD["status"] == 0) { 
+		status = "none"
+		return
+	}
     else if (WORD["status"] == 1) status = "folk"
     else if (WORD["status"] == 2) status = "official"
 	else if (WORD["status"] == 3) status = "official-sus"
-    console.log(status);
 
     document.write(`
     <div class="single-word" the-word="${word}">
@@ -299,7 +335,7 @@ WORDS.forEach(function(word) {
 		var example_translation = WORD["eg"][i]["zh"]
 		var example_comment = WORD["eg"][i]["comment"]
 		if (example_comment === undefined) example_comment = ""
-		else example_comment = "(注)" + example_comment
+		else example_comment = "(" + example_comment + ")"
 		document.write(`
 			<div class="word-example">
 				<div class="example-hilichurlian">
@@ -318,6 +354,7 @@ WORDS.forEach(function(word) {
 	document.write(`
 		</div>
     </div>
+	<hr>
     `)
 
 })
