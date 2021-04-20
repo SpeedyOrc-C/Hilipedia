@@ -1,5 +1,6 @@
 
 #dictionary-proper, #search-instruction {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 0.5rem 0.1rem gray;
     
@@ -12,15 +13,6 @@
 #search-instruction {
     width: fit-content;
     text-align: center;
-}
-#search-label {
-    display: inline-block; 
-    height: fit-content; 
-    vertical-align: top; 
-    padding: 1rem 0; 
-    line-height: 2rem;
-
-    font-size: 1.2rem;
 }
 @keyframes pressButtonAni {
     0% {
@@ -46,20 +38,55 @@
     line-height: 4rem;
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-
+    
     border-radius: 0.3rem;
     height: 4rem;
     width: 4rem;
     margin: 0 0.2rem;
-
+    
     background-color: white;
     border: 1px solid #0004;
     box-shadow: 0 0 0.4rem 0.05rem gray;
     color: #333;
-
-    animation: pressButtonAni 2s infinite;
+    
+    animation: pressButtonAni 1s 2;
+    animation-timing-function: ease-out;
 }
 #control-key { width: 5rem;}
+#search-label {
+    display: inline-block;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    height: 4rem;
+    width: 4rem;
+    margin: 0 1rem;
+    
+    color: #333;
+
+}
+#search-instruction-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    color: #333;
+
+    transition: color;
+    transition-duration: 0.3s;
+}
+#search-instruction-close-btn:hover {
+    color: rgb(0, 119, 255);
+
+    transition: color;
+    transition-duration: 0.1s;
+}
 /*****************/
 
 .single-word {

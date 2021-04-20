@@ -33,6 +33,7 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"火"},
 				{"pos":"n", "zh":"热的东西"},
 				{"pos":"adj", "zh":"热的"},
+				{"pos":"n", "zh":"一天; 日子"},
 			],
 			"eg":[], 
 			"origin":"道本语 seli 火",
@@ -68,8 +69,11 @@ var DICTIONARY = {
 			"def":[{"pos":"pron", "zh":"何处"}],
 			"eg":[], "status":3},
 		"domu":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[
+				{"pos":"v", "zh":"聚集"},
+				{"pos":"v", "zh":"躺下"},
+			],
+			"eg":[], "status":1},
 		"du":{
 			"def":[{"pos":"n", "zh":"二"}],
 			"eg":[], 
@@ -84,8 +88,8 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"guru-guru":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"adj", "zh":"饿得咕咕叫的"}],
+			"eg":[], "status":1},
 		"gusha":{
 			"def":[
 				{"pos":"n", "zh":"草; 植物; 水果; 谷物"},
@@ -132,11 +136,15 @@ var DICTIONARY = {
 		"lata movo":{
 			"def":[{"pos":"n", "zh":"水"}],
 			"eg":[], "status":1},
+		"lawa":{
+			"def":[{"pos":"n", "zh":"首领; 头目"}],
+			"eg":[], "status":1},
 		"mani":{
 			"def":[
 				{"pos":"n", "zh":"五"},
 				{"pos":"n", "zh":"手"},
 				{"pos":"v", "zh":"劳动"},
+				{"pos":"v", "zh":"给予"},
 			],
 			"eg":[], 
 			"origin":"拉丁语 manus 手",
@@ -155,7 +163,7 @@ var DICTIONARY = {
 			],
 			"eg":[], "status":2},
 		"mitino":{
-			"def":[{"pos":"", "zh":""}],
+			"def":[{"pos":"n", "zh":"丘丘暴徒"}],
 			"eg":[], "status":0},
 		"mosi":{
 			"def":[
@@ -205,8 +213,12 @@ var DICTIONARY = {
 			"def":[{"pos":"v", "zh":"喜欢; 想要"}],
 			"eg":[], "status":3},
 		"nini":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[
+				{"pos":"n", "zh":"雷电"},
+				{"pos":"n", "zh":"警示"},
+				{"pos":"n", "zh":"贡品"},
+			],
+			"eg":[], "status":1},
 		"nunu":{
 			"def":[{"pos":"v", "zh":"睡觉"}],
 			"eg":[], "status":0},
@@ -220,7 +232,7 @@ var DICTIONARY = {
 			"def":[{"pos":"int", "zh":"你好"}],
 			"eg":[], "status":2},
 		"plata":{
-			"def":[{"pos":"v", "zh":"打"}],
+			"def":[{"pos":"v", "zh":"打; 攻击"}],
 			"eg":[], "status":1},
 		"pupu":{
 			"def":[{"pos":"", "zh":""}],
@@ -265,14 +277,18 @@ var DICTIONARY = {
 			"origin":"道本语 tu wan 三",
 			"status":3},
 		"upa":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[
+				{"pos":"n", "zh":"山"},
+				{"pos":"v", "zh":"超越"},
+				{"pos":"prep", "zh":"于……之上"}
+			],
+			"eg":[], "status":3},
 		"upano":{
 			"def":[{"pos":"n", "zh":"会飞的东西"}],
 			"eg":[], "status":3},
 		"valo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"int", "zh":"再见"}],
+			"eg":[], "status":1},
 		"vin":{
 			"def":[
 				{"pos":"v", "zh":"防止"},
@@ -297,7 +313,10 @@ var DICTIONARY = {
 			"def":[{"pos":"pron", "zh":"你"}],
 			"eg":[], "status":1},
 		"yoyo":{
-			"def":[{"pos":"pron", "zh":"你们"}],
+			"def":[
+				{"pos":"pron", "zh":"你们"},
+				{"pos":"n", "zh":"酒"}
+			],
 			"eg":[], "status":1},
 		"zido":{
 			"def":[{"pos":"n", "zh":"东西"}],

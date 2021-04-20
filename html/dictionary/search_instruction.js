@@ -12,11 +12,16 @@ if (appVersion.indexOf("Mac OS") != -1) clientOS = MAC
 if (clientOS == WINDOWS) document.write(`Ctrl`)
 if (clientOS == MAC) document.write(`⌘`)
 
+// 隐藏标语
+function hideSearchInstruction () {
+    document.getElementById("search-instruction").style.visibility = "hidden"
+}
+
 // 检测查找快捷键，如果按下，则隐藏标语
 document.onkeydown = function (e) {
     if (e.key == "f" || e.key == "F") { // F 按键
         if (clientOS == WINDOWS && e.ctrlKey || clientOS == MAC && e.metaKey) { // Windows 的 Ctrl 或 Mac 的 Command
-            document.getElementById("search-instruction").style.display = "none"
+            hideSearchInstruction()
             this.onkeydown = null
         }
     }

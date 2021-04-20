@@ -24,9 +24,14 @@ header {
     font-family: Georgia, sans-serif;
 }
 
-.the-word {
+.the-word, .example-hilichurlian {
     font-family: Georgia, serif;
 }
-.example-hilichurlian {
-    font-family: Georgia, serif;
+
+.translation, .example-comment {
+    font-family: serif;
+}
+
+code {
+    font-family: Consolas, 'Courier New', Courier, monospace;
 }
