@@ -7,8 +7,10 @@ var DICTIONARY = {
 			"def":[{"pos":"prep", "zh":"之前"}],
 			"eg":[], "status":1},
 		"beru":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"v", "zh":"说话"}],
+			"eg":[], 
+			"origin":"日语 しゃべる(shyaberu) 说话",
+			"status":1},
 		"biadam":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -17,7 +19,9 @@ var DICTIONARY = {
 			"eg":[], "status":0},
 		"biat":{
 			"def":[{"pos":"int", "zh":"它妈的"}],
-			"eg":[], "status":1},
+			"eg":[], 
+			"origin":"俄语 блядь(blyad') 他妈的",
+			"status":1},
 		"boya":{
 			"def":[{"pos":"n", "zh":"颜色"}],
 			"eg":[], "status":3},
@@ -30,7 +34,9 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"热的东西"},
 				{"pos":"adj", "zh":"热的"},
 			],
-			"eg":[], "status":3},
+			"eg":[], 
+			"origin":"道本语 seli 火",
+			"status":3},
 		"celi lata":{
 			"def":[
 				{"pos":"n", "zh":"又冷又热的东西"},
@@ -52,7 +58,9 @@ var DICTIONARY = {
 				{"pos":"int", "zh":"表示接受或答应"},
 				{"pos":"adv", "zh":"很; 十分; 最"}
 			],
-			"eg":[], "status":2},
+			"eg":[], 
+			"origin":"协和语 大大(da da) 非常",
+			"status":2},
 		"Dadaupa":{
 			"def":[{"pos":"place", "zh":"达达乌帕谷"}],
 			"eg":[], "status":2},
@@ -64,10 +72,14 @@ var DICTIONARY = {
 			"eg":[], "status":0},
 		"du":{
 			"def":[{"pos":"n", "zh":"二"}],
-			"eg":[], "status":3},
+			"eg":[], 
+			"origin":"拉丁语 duo 二",
+			"status":3},
 		"dudu":{
 			"def":[{"pos":"n", "zh":"四"}],
-			"eg":[], "status":3},
+			"eg":[], 
+			"origin":"道本语 tu tu 四",
+			"status":3},
 		"eleka":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -90,9 +102,15 @@ var DICTIONARY = {
 					"zh":"种子"
 				}
 			], "status":2},
-		"ika":{
+		"homu":{
 			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"eg":[], "status":0
+		},
+		"ika":{
+			"def":[{"pos":"n", "zh":"坏人"}],
+			"eg":[], 
+			"origin":"道本语 ike 坏的",
+			"status":3},
 		"in":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -109,15 +127,20 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"lata":{
+			"def":[{"pos":"n", "zh":"冰"}],
+			"eg":[], "status":1},
+		"lata movo":{
 			"def":[{"pos":"n", "zh":"水"}],
 			"eg":[], "status":1},
 		"mani":{
 			"def":[
 				{"pos":"n", "zh":"五"},
 				{"pos":"n", "zh":"手"},
-				{"pos":"n", "zh":"劳动"},
+				{"pos":"v", "zh":"劳动"},
 			],
-			"eg":[], "status":3},
+			"eg":[], 
+			"origin":"拉丁语 manus 手",
+			"status":3},
 		"mi":{
 			"def":[{"pos":"pron", "zh":"我"}],
 			"eg":[], "status":1},
@@ -221,8 +244,8 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"todo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"v", "zh":"给予"}],
+			"eg":[], "status":1},
 		"tomo":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -238,7 +261,9 @@ var DICTIONARY = {
 			"eg":[], "status":3},
 		"unu du":{
 			"def":[{"pos":"n", "zh":"三"}],
-			"eg":[], "status":3},
+			"eg":[], 
+			"origin":"道本语 tu wan 三",
+			"status":3},
 		"upa":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -249,8 +274,13 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"vin":{
-			"def":[{"pos":"v", "zh":"防止"}],
-			"eg":[], "status":1},
+			"def":[
+				{"pos":"v", "zh":"防止"},
+				{"pos":"n", "zh":"酒"},
+			],
+			"eg":[], 
+			"origin":"拉丁语 vinum 酒",
+			"status":1},
 		"ya":{
 			"def":[{"pos":"n", "zh":"一个"}],
 			"eg":[], "status":3},
@@ -339,7 +369,7 @@ WORDS.forEach(function(word) {
 		document.write(`
 			<div class="word-example">
 				<div class="example-hilichurlian">
-					${example_hilichurlian}
+					· ${example_hilichurlian}
 				</div>
 				<div class="example-translation">
 					${example_translation}
@@ -353,7 +383,14 @@ WORDS.forEach(function(word) {
 
 	document.write(`
 		</div>
-    </div>
+		<div class="word-origin">
+	`)
+	if (WORD.origin === undefined) var word_origin = ""
+	else word_origin = WORD.origin
+	document.write(`
+			<code>${word_origin}</code>
+    	</div>
+	</div>
 	<hr>
     `)
 
