@@ -1,10 +1,18 @@
 var DICTIONARY = {
 	"dictionary_proper":{
+		//	[单词的格式]
+		//	"丘丘语单词":{
+		//		[{"pos":"单词词性", "zh":"中文释义"}],
+		//		"eg":[{"hil":"丘丘语词组", "zh":"中文释义", "comment":"对单词的解读"}],
+		//		"origin":词源"
+		//		"status":释义的确定性
+		//	}
+		
 		"a":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"aba":{
-			"def":[{"pos":"prep", "zh":"之前"}],
+			"def":[{"pos":"prep", "zh":"在……之前"}],
 			"eg":[], "status":1},
 		"beru":{
 			"def":[{"pos":"v", "zh":"说话"}],
@@ -65,9 +73,16 @@ var DICTIONARY = {
 		"Dadaupa":{
 			"def":[{"pos":"place", "zh":"达达乌帕谷"}],
 			"eg":[], "status":2},
-		"dala":{
-			"def":[{"pos":"pron", "zh":"何处"}],
+		"dada upa":{
+			"def":[{"pos":"n", "zh":"高山"}],
 			"eg":[], "status":3},
+		"dala":{
+			"def":[
+				{"pos":"pron", "zh":"何人"},
+				{"pos":"pron", "zh":"何物"},
+				{"pos":"pron", "zh":"何处"},
+			],
+			"eg":[], "status":1},
 		"domu":{
 			"def":[
 				{"pos":"v", "zh":"聚集"},
@@ -87,7 +102,7 @@ var DICTIONARY = {
 		"eleka":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
-		"guru-guru":{
+		"guru":{
 			"def":[{"pos":"adj", "zh":"饿得咕咕叫的"}],
 			"eg":[], "status":1},
 		"gusha":{
@@ -111,13 +126,15 @@ var DICTIONARY = {
 			"eg":[], "status":0
 		},
 		"ika":{
-			"def":[{"pos":"n", "zh":"坏人"}],
+			"def":[{"pos":"a", "zh":"坏的"}],
 			"eg":[], 
 			"origin":"道本语 ike 坏的",
 			"status":3},
 		"in":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"prep", "zh":"在里面"}],
+			"eg":[], 
+			"origin":"英语 in 在里面",
+			"status":0},
 		"ka":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -125,8 +142,8 @@ var DICTIONARY = {
 			"def":[{"pos":"adj", "zh":"弱; 弱小"}],
 			"eg":[], "status":3},
 		"kundala":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"弱者"}],
+			"eg":[], "status":1},
 		"kuzi":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -138,7 +155,7 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"lawa":{
 			"def":[{"pos":"n", "zh":"首领; 头目"}],
-			"eg":[], "status":1},
+			"eg":[], "status":3},
 		"mani":{
 			"def":[
 				{"pos":"n", "zh":"五"},
@@ -148,7 +165,7 @@ var DICTIONARY = {
 			],
 			"eg":[], 
 			"origin":"拉丁语 manus 手",
-			"status":3},
+			"status":1},
 		"mi":{
 			"def":[{"pos":"pron", "zh":"我"}],
 			"eg":[], "status":1},
@@ -161,10 +178,16 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"喜欢的东西"},
 				{"pos":"adj", "zh":"动物身上出的; 喜好上好的; 好吃的"}
 			],
-			"eg":[], "status":2},
+			"eg":[
+				{
+					"hil":"mita lata movo",
+					"zh":"鱼肉",
+					"comment":"水里的肉"
+				}
+			], "status":2},
 		"mitino":{
 			"def":[{"pos":"n", "zh":"丘丘暴徒"}],
-			"eg":[], "status":0},
+			"eg":[], "status":1},
 		"mosi":{
 			"def":[
 				{"pos":"n", "zh":"食物"},
@@ -221,13 +244,16 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"nunu":{
 			"def":[{"pos":"v", "zh":"睡觉"}],
-			"eg":[], "status":0},
+			"eg":[], "status":2},
+		"nya":{
+			"def":[{"pos":"", "zh":"同 nye"}],
+			"eg":[], "status":1},
 		"nye":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"adv", "zh":"不; 别; 表示否定"}],
+			"eg":[], "status":1},
 		"odomu":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"同志; 兄弟"}],
+			"eg":[], "status":1},
 		"olah":{
 			"def":[{"pos":"int", "zh":"你好"}],
 			"eg":[], "status":2},
@@ -256,13 +282,13 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"todo":{
-			"def":[{"pos":"v", "zh":"给予"}],
+			"def":[{"pos":"v", "zh":"拿"}],
 			"eg":[], "status":1},
 		"tomo":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"unta":{
-			"def":[{"pos":"prep", "zh":"之后"}],
+			"def":[{"pos":"prep", "zh":"在……之后"}],
 			"eg":[], "status":1},
 		"unu":{
 			"def":[
@@ -298,19 +324,19 @@ var DICTIONARY = {
 			"origin":"拉丁语 vinum 酒",
 			"status":1},
 		"ya":{
-			"def":[{"pos":"n", "zh":"一个"}],
-			"eg":[], "status":3},
+			"def":[{"pos":"n", "zh":"一个人"}],
+			"eg":[], "status":1},
 		"yaya":{
-			"def":[{"pos":"n", "zh":"一群"}],
-			"eg":[], "status":3},
+			"def":[{"pos":"n", "zh":"一群人"}],
+			"eg":[], "status":1},
 		"ye":{
-			"def":[{"pos":"pron", "zh":"你"}],
+			"def":[{"pos":"pron", "zh":"你 (通格)"}],
 			"eg":[], "status":1},
 		"yeye":{
 			"def":[{"pos":"pron", "zh":"你们"}],
 			"eg":[], "status":1},
 		"yo":{
-			"def":[{"pos":"pron", "zh":"你"}],
+			"def":[{"pos":"pron", "zh":"你 (作格)"}],
 			"eg":[], "status":1},
 		"yoyo":{
 			"def":[
@@ -322,7 +348,7 @@ var DICTIONARY = {
 			"def":[{"pos":"n", "zh":"东西"}],
 			"eg":[], "status":3}
 	},
-	"posAbbr":{
+	"posAbbr":{ // 单词词性缩写
 		"adj":{"zh":"形"},
 		"adv":{"zh":"副"},
 		"n":{"zh":"名"},
@@ -336,81 +362,90 @@ var DICTIONARY = {
 	}
 }
 
-var PROPER = DICTIONARY["dictionary_proper"]
-var WORDS = Object.keys(PROPER)
-var POSABBR = DICTIONARY["posAbbr"]
+var dictionary_proper = document.getElementById("dictionary-proper")
 
-WORDS.forEach(function(word) {
-    
-    var WORD = PROPER[word]
-    var status = ""
-    if (WORD["status"] == 0) { 
-		status = "none"
-		return
-	}
-    else if (WORD["status"] == 1) status = "folk"
-    else if (WORD["status"] == 2) status = "official"
-	else if (WORD["status"] == 3) status = "official-sus"
-
-    document.write(`
-    <div class="single-word" the-word="${word}">
-        <div class="the-word word-status-${status}">
-            ${word}
-        </div>
-        <div class="word-definitions">
-    `)
-
-    for (i=0; i<WORD["def"].length; i++) {
-        var part_of_speech = POSABBR[WORD["def"][i]["pos"]]
-        var translation = WORD["def"][i]["zh"]
-        if (part_of_speech === undefined) part_of_speech = ""
-        else part_of_speech = "["+part_of_speech["zh"]+"]"
-        document.write(`
-            <div class="word-definition">
-                <div class="part-of-speech">
-                    ${part_of_speech}
-                </div>
-                <div class="translation">${translation}</div>
-            </div>
-        `)
-    }
-    document.write(`
-        </div>
-		<div class="word-examples">
-	`)
-
-	for (i=0; i<WORD["eg"].length; i++) {
-		var example_hilichurlian = WORD["eg"][i]["hil"]
-		var example_translation = WORD["eg"][i]["zh"]
-		var example_comment = WORD["eg"][i]["comment"]
-		if (example_comment === undefined) example_comment = ""
-		else example_comment = "(" + example_comment + ")"
-		document.write(`
-			<div class="word-example">
-				<div class="example-hilichurlian">
-					· ${example_hilichurlian}
-				</div>
-				<div class="example-translation">
-					${example_translation}
-				</div>
-				<div class="example-comment">
-					${example_comment}
-				</div>
+function displayDictionary (
+	showUnknownWord = false
+) {
+	dictionary_proper.innerHTML = "";
+	var PROPER = DICTIONARY["dictionary_proper"]
+	var WORDS = Object.keys(PROPER)
+	var POSABBR = DICTIONARY["posAbbr"]
+	
+	WORDS.forEach(function(word) {
+		
+		var WORD = PROPER[word]
+		var status = ""
+		if (WORD["status"] == 0) { 
+			status = "none"
+			if (!showUnknownWord) return
+		}
+		else if (WORD["status"] == 1) status = "folk"
+		else if (WORD["status"] == 2) status = "official"
+		else if (WORD["status"] == 3) status = "official-sus"
+		
+		dictionary_proper.innerHTML += `
+		<div class="single-word" the-word="${word}">
+			<div class="the-word word-status-${status}">
+				${word}
 			</div>
-		`)
-	}
-
-	document.write(`
+			<div class="word-definitions">
+		`
+	
+		for (i=0; i<WORD["def"].length; i++) {
+			var part_of_speech = POSABBR[WORD["def"][i]["pos"]]
+			var translation = WORD["def"][i]["zh"]
+			if (part_of_speech === undefined) part_of_speech = ""
+			else part_of_speech = "["+part_of_speech["zh"]+"]"
+			dictionary_proper.innerHTML += `
+				<div class="word-definition">
+					<div class="part-of-speech">
+						${part_of_speech}
+					</div>
+					<div class="translation">${translation}</div>
+				</div>
+			`
+		}
+		dictionary_proper.innerHTML += `
+			</div>
+			<div class="word-examples">
+		`
+	
+		for (i=0; i<WORD["eg"].length; i++) {
+			var example_hilichurlian = WORD["eg"][i]["hil"]
+			var example_translation = WORD["eg"][i]["zh"]
+			var example_comment = WORD["eg"][i]["comment"]
+			if (example_comment === undefined) example_comment = ""
+			else example_comment = "(" + example_comment + ")"
+			dictionary_proper.innerHTML += `
+				<div class="word-example">
+					<div class="example-hilichurlian">
+						· ${example_hilichurlian}
+					</div>
+					<div class="example-translation">
+						${example_translation}
+					</div>
+					<div class="example-comment">
+						${example_comment}
+					</div>
+				</div>
+			`
+		}
+	
+		dictionary_proper.innerHTML += `
+			</div>
+			<div class="word-origin">
+		`
+		if (WORD.origin === undefined) var word_origin = ""
+		else word_origin = WORD.origin
+		dictionary_proper.innerHTML += `
+				<code>${word_origin}</code>
+			</div>
 		</div>
-		<div class="word-origin">
-	`)
-	if (WORD.origin === undefined) var word_origin = ""
-	else word_origin = WORD.origin
-	document.write(`
-			<code>${word_origin}</code>
-    	</div>
-	</div>
-	<hr>
-    `)
+		<hr>
+		`
+	
+	})
+}
 
-})
+displayDictionary(showUnknownWord=false)

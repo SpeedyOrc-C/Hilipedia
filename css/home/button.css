@@ -1,0 +1,29 @@
+.btn {
+    display: inline-block;
+    width: fit-content;
+    user-select: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.btn-normal {
+    background-color: #eee;
+    border: 1px solid gray;
+    color: #222;
+
+    transition: background-color, color;
+    transition-duration: 0.1s;
+}
+.btn-normal:hover {
+    background-color: white;
+    color: black;
+    transition: background-color, color, transform;
+    transition-duration: 0.1s;
+}
+.btn-normal:active {
+    background-color: white;
+    color: black;
+    transform: scale(0.95);
+    transition: transform;
+    transition-duration: 0.1s;
+}

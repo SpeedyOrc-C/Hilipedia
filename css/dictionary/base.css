@@ -1,5 +1,5 @@
 
-#dictionary-proper, #search-instruction {
+#dictionary-proper, #search-instruction, #dictionary-panel {
     position: relative;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 0.5rem 0.1rem gray;
@@ -8,6 +8,9 @@
     border-radius: 0.3rem;
     padding: 1rem;
     width: 30rem;
+}
+#dictionary-panel {
+    width: fit-content;
 }
 /* 提示按下搜索按钮 */
 #search-instruction {
@@ -127,8 +130,8 @@
     font-size: 0.8rem;
     color: #777;
 }
-.word-origin {
-    font-size: 0.8rem;
+code {
+    font-size: 0.7rem;
 }
 
 .dictionary-legend {

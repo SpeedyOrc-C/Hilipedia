@@ -45,14 +45,14 @@ blockquote {
     padding: 0.2rem 0.5rem;
 
     transition: background-color, color;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
 }
 .corpus-article:hover {
     background-color: #444;
     color: #FFF;
 
     transition: background-color, color;
-    transition-duration: 0.1s;
+    transition-duration: 0.05s;
 }
 .ca-text::before {content: "📄";}
 .ca-book::before {content: "📖"}
@@ -68,3 +68,22 @@ blockquote {
 
     user-select: none;
 }
+
+img {
+    margin: 0 35%;
+    width: 30%;
+    transform: scale(1);
+
+    transition: all;
+    transition-duration: 0.1s;
+}
+img:hover {
+    transform: scale(1.5);
+    transition-duration: 0.1s;
+    cursor: zoom-in;
+}
+img:active {
+    transform: scale(2.5);
+    transition-duration: 0.1s;
+}
+

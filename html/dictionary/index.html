@@ -7,6 +7,7 @@
     <link href="../../css/general/font.css" rel="stylesheet" />
     <link href="../../css/general/base.css" rel="stylesheet" />
     <link href="../../css/dictionary/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/home/button.css">
 
     <title>Hilipedia 词典</title>
 </head>
@@ -23,17 +24,25 @@
         <div id="search-label">
             查询
         </div>
-        <div id="search-instruction-close-btn" onclick="hideSearchInstruction();">✖</div>
+        <div id="search-instruction-close-btn" onclick="hideSearchInstruction()">✖</div>
+    </div>
+
+    <div id="dictionary-panel">
+        <div class="btn btn-normal" onclick="displayDictionary(false)">
+            词典正文
+        </div>
+        <div class="btn btn-normal" onclick="displayDictionary(true)">
+            显示未知词语
+        </div>
     </div>
 
     <div id="dictionary-proper">
-        <script src="dictionary.js"></script>
     </div>
-
+    
     <br><br><br>
     <br><br><br>
     <br><br><br>
-
+    
     <div class="dictionary-legend">
         <b style="font-size: 1.1rem;">图例</b><br>
         <div class="word-status-official">来自官方</div>
@@ -41,8 +50,9 @@
         <div class="word-status-folk">民间推测</div>
         <div class="word-status-none">暂无释义</div>
     </div>
-
+    
 </body>
 
+<script src="dictionary.js"></script>
 
 </html>

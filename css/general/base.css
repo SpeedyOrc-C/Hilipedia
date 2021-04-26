@@ -19,3 +19,8 @@ nav {
     width: fit-content;
     width: -moz-fit-content;
 }
+
+hr { 
+    width: 90%;
+    border: 1px solid rgb(216, 213, 207);
+}
