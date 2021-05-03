@@ -32,7 +32,14 @@ var DICTIONARY = {
 			"status":1},
 		"boya":{
 			"def":[{"pos":"n", "zh":"颜色"}],
-			"eg":[], "status":3},
+			"eg":[
+				{"hil":"celi boya", "zh":"红色"},
+				{"hil":"unu boya", "zh":"黄色"},
+				{"hil":"gusha boya", "zh":"绿色"},
+				{"hil":"lata boya", "zh":"蓝色"},
+				{"hil":"nini boya", "zh":"白色"},
+				{"hil":"nunu / sama boya", "zh":"黑色"},
+			], "status":3},
 		"buka":{
 			"def":[{"pos":"n", "zh":"肚子"}],
 			"eg":[], "status":1},
@@ -126,7 +133,7 @@ var DICTIONARY = {
 			"eg":[], "status":0
 		},
 		"ika":{
-			"def":[{"pos":"a", "zh":"坏的"}],
+			"def":[{"pos":"adj", "zh":"坏的"}],
 			"eg":[], 
 			"origin":"道本语 ike 坏的",
 			"status":3},
@@ -206,7 +213,7 @@ var DICTIONARY = {
 				{
 					"hil":"mosi dada",
 					"zh":"午餐",
-					"comment":"午餐的饭会好吃吗？"
+					"comment":"好吃的饭谓之“午饭”"
 				},
 				{
 					"hil":"aba mosi dada",
