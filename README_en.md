@@ -5,11 +5,13 @@
 ## Intro
 This repository contains a static website, it includes all the Hilichurlian text appeared in the game *Genshin Impact* and an unofficial dictionary. We hope it will make the things easier. 😄  
 
-
 ----------
 
+## Translation of this Site
+Currently, only the dictionary is available in English. 
+
 ## About the Dictionary
-Please notice, all the translation of the words can be changed frequently. 
+Please notice, all the translation of the words can **be changed frequently**. 
 
 ## Support us
 If you have any suggestion about the dictionary or this website, go to "issue" above. 

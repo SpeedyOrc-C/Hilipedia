@@ -1,4 +1,3 @@
-
 #dictionary-proper, #search-instruction, #dictionary-panel {
     position: relative;
     background-color: rgba(255, 255, 255, 0.6);
@@ -20,7 +19,7 @@
 @keyframes pressButtonAni {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 0.4rem 0.05rem gray;
+        box-shadow: 0 0 0.2rem 0.02rem gray;
     }
     25% {
         transform: scale(0.99);
@@ -28,11 +27,11 @@
     }
     50% {
         transform: scale(1);
-        box-shadow: 0 0 0.4rem 0.05rem gray;
+        box-shadow: 0 0 0.2rem 0.02rem gray;
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 0 0.4rem 0.05rem gray;
+        box-shadow: 0 0 0.2rem 0.02rem gray;
     }
 }
 #control-key, #F-key {
@@ -49,10 +48,10 @@
     
     background-color: white;
     border: 1px solid #0004;
-    box-shadow: 0 0 0.4rem 0.05rem gray;
+    box-shadow: 0 0 0.2rem 0.02rem gray;
     color: #333;
     
-    animation: pressButtonAni 1s 2;
+    animation: pressButtonAni 1s 3;
     animation-timing-function: ease-out;
 }
 #control-key { width: 5rem;}
@@ -120,6 +119,9 @@
 
 .example-hilichurlian {
     display: inline-block;
+    color: #777;
+    font-style: italic;
+    font-size: 0.8em;
 }
 .example-translation {
     display: inline-block;
@@ -131,6 +133,7 @@
     color: #777;
 }
 code {
+    color: #bbb;
     font-size: 0.7rem;
 }
 

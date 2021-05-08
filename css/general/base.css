@@ -24,3 +24,9 @@ hr {
     width: 90%;
     border: 1px solid rgb(216, 213, 207);
 }
+
+.newsfeed {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+}

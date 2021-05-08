@@ -7,10 +7,10 @@ article {
     box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
     width: 43rem;
     margin: 2rem auto;
-    padding: 1rem 4rem;
+    padding: 1rem 4rem 4rem 4rem;
 }
 
-h1, h2, h3, p, blockquote {
+h1, h2, h3, p, blockquote, td {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
 }
@@ -33,7 +33,15 @@ blockquote {
     line-height: 1.5rem;
     width: fit-content;
 }
-
+table {
+    border: 1px solid black;
+    background-color: #FFF6;
+}
+td {
+    padding: 0.2rem;
+    border: 1px solid black;
+    text-align: center;
+}
 .corpus-article {
     user-select: none;
     white-space: pre;

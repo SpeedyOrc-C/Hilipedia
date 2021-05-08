@@ -24,12 +24,16 @@ header {
     font-family: Georgia, sans-serif;
 }
 
-.the-word, .example-hilichurlian {
+.the-word, .example-hilichurlian, .example-translation {
     font-family: Georgia, serif;
 }
 
 .translation, .example-comment {
-    font-family: serif;
+    font-family: Georgia, serif;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 code {

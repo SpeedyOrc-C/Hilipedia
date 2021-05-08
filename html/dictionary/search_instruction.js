@@ -14,6 +14,7 @@ if (clientOS == MAC) document.write(`⌘`)
 
 // 隐藏标语
 function hideSearchInstruction () {
+    document.getElementById("search-instruction").style.display = "none"
     document.getElementById("search-instruction").style.visibility = "hidden"
 }
 

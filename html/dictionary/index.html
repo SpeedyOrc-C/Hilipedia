@@ -28,20 +28,27 @@
     </div>
 
     <div id="dictionary-panel">
-        <div class="btn btn-normal" onclick="displayDictionary(false)">
+        <!--词类筛选按钮-->
+        <div class="btn btn-normal" onclick="setShowUnknownWord(false)">
             词典正文
         </div>
-        <div class="btn btn-normal" onclick="displayDictionary(true)">
+        <div class="btn btn-normal" onclick="setShowUnknownWord(true)">
             显示未知词语
+        </div>
+        <!--语言切换按钮-->
+        <div class="btn btn-normal" onclick="setLang('zh')">
+            中文
+        </div>
+        <div class="btn btn-normal" onclick="setLang('en')">
+            English
         </div>
     </div>
 
     <div id="dictionary-proper">
+        <!--词典正文-->
     </div>
     
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
+    <br><br><br><br><br><br><br><br><br>
     
     <div class="dictionary-legend">
         <b style="font-size: 1.1rem;">图例</b><br>
