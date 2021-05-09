@@ -24,6 +24,27 @@ document.onkeydown = function (e) {
         if (clientOS == WINDOWS && e.ctrlKey || clientOS == MAC && e.metaKey) { // Windows 的 Ctrl 或 Mac 的 Command
             hideSearchInstruction()
             this.onkeydown = null
+
+            CONFIG["searchHintWindowUnderstand"] = true
+            document.cookie = JSON.stringify(CONFIG)
         }
     }
 }
+
+var CONFIG = {}
+
+try { // 读取 Cookie
+	CONFIG = JSON.parse(document.cookie.split("=; ")[0])
+} catch (e) { // 如果 Cookie 未能正常解析，则填入默认 Cookie
+	CONFIG = {
+		"showUnknownWord": false, // 是否显示未知词语
+		"lang": "zh", // 词典语言
+		"searchHintWindowUnderstand": false, // 是否已经按下了“查找”快捷键
+	}
+	document.cookie = JSON.stringify(CONFIG) // 写入默认 Cookie
+}
+
+if (CONFIG["searchHintWindowUnderstand"]) {
+    hideSearchInstruction()
+}
+

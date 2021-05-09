@@ -1,3 +1,5 @@
+////////// 词典部分 //////////
+
 // 词典正文
 var DICTIONARY = {
 	"dictionary_proper":{
@@ -380,8 +382,8 @@ var DICTIONARY = {
 	}
 }
 var dictionary_proper = document.getElementById("dictionary-proper")
-
-function displayDictionary ( // 渲染词典
+// 渲染词典
+function displayDictionary (
 	showUnknownWord = false,
 	lang = "zh"
 ) {
@@ -390,18 +392,19 @@ function displayDictionary ( // 渲染词典
 	var WORDS = Object.keys(PROPER)
 	var POSABBR = DICTIONARY["posAbbr"]
 	
-	WORDS.forEach(function(word) {
+	WORDS.forEach(function(word) { // 依次渲染每一个单词
 		
 		var WORD = PROPER[word]
 		var status = ""
 		if (WORD["status"] == 0) { 
 			status = "none"
-			if (!showUnknownWord) return
+			if (!showUnknownWord) return // 忽略没有释义的单词
 		}
-		else if (WORD["status"] == 1) status = "folk"
+		else if (WORD["status"] == 1) status = "folk" // 单词释义确定程度的 CSS 类
 		else if (WORD["status"] == 2) status = "official"
 		else if (WORD["status"] == 3) status = "official-sus"
 		
+		// 单词本身
 		dictionary_proper.innerHTML += `
 		<div class="single-word" the-word="${word}">
 			<div class="the-word word-status-${status}">
@@ -409,7 +412,7 @@ function displayDictionary ( // 渲染词典
 			</div>
 			<div class="word-definitions">
 		`
-	
+		// 依次渲染每一个释义
 		for (i=0; i<WORD["def"].length; i++) {
 
 			var part_of_speech = POSABBR[WORD["def"][i]["pos"]]
@@ -430,7 +433,7 @@ function displayDictionary ( // 渲染词典
 			</div>
 			<div class="word-examples">
 		`
-	
+		// 依次渲染每一个例子
 		for (i=0; i<WORD["eg"].length; i++) {
 
 			var example_hilichurlian = WORD["eg"][i]["hil"]
@@ -461,6 +464,7 @@ function displayDictionary ( // 渲染词典
 			</div>
 			<div class="word-origin">
 		`
+		// 如果有单源信息则显示
 		if (WORD.origin === undefined) var word_origin = ""
 		else word_origin = WORD.origin[lang]
 
@@ -470,29 +474,47 @@ function displayDictionary ( // 渲染词典
 		</div>
 		<hr>
 		`
-	
 	})
 }
 
-// 词典的设置
-var CONFIG = {
-	"showUnknownWord": false, // 是否显示未知词语
-	"lang": "zh", // 词典语言
-}
+////////// 配置部分 //////////
+
+// 使用 Cookie 储存用户信息
+var CONFIG = {}
+
+try { // 读取 Cookie
+	CONFIG = JSON.parse(document.cookie.split("=; ")[0])
+} catch (e) { resetCookie() } // 如果 Cookie 未能正常解析，则填入默认 Cookie
+
+// 设置函数开始 //
 function setShowUnknownWord(value) {
 	CONFIG["showUnknownWord"] = value
-	configureAndDisplayDictionary()
+	saveConfigureAndDisplayDictionary()
 }
 function setLang(value) {
 	CONFIG["lang"] = value
-	configureAndDisplayDictionary()
+	saveConfigureAndDisplayDictionary()
 }
-function configureAndDisplayDictionary() {
+function resetCookie(doReload=false) { // 重置 Cookie
+	document.cookie = "expires=Thu, 01 Jan 1970 00:00:00 GMT"
+	CONFIG = {
+		"showUnknownWord": false, // 是否显示未知词语
+		"lang": "zh", // 词典语言
+		"searchHintWindowUnderstand": false, // 是否已经按下了“查找”快捷键
+	}
+	document.cookie = JSON.stringify(CONFIG) // 写入默认 Cookie
+	console.log(document.cookie)
+	if (doReload) location.reload() // 刷新
+}
+// 结束 //
+
+function saveConfigureAndDisplayDictionary() {
+	document.cookie = JSON.stringify(CONFIG)
 	displayDictionary(
 		showUnknownWord = CONFIG["showUnknownWord"],
 		lang = CONFIG["lang"]
 	)
 }
 
-
-configureAndDisplayDictionary()
+// 页面载入后直接运行
+saveConfigureAndDisplayDictionary()
