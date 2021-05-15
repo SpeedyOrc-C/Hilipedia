@@ -44,7 +44,7 @@ var DICTIONARY = {
 				{"hil":"gusha boya", "zh":"绿色", "en":"green"},
 				{"hil":"lata boya", "zh":"蓝色", "en":"blue"},
 				{"hil":"nini boya", "zh":"白色", "en":"white"},
-				{"hil":"nunu/sama boya", "zh":"黑色", "en":"black"},
+				{"hil":"nunu/sama boya", "zh":"黑色", "en":"black"}
 			], "status":3},
 		"buka":{
 			"def":[{"pos":"n", "zh":"肚子", "en":"belly"}],
@@ -54,7 +54,7 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"火", "en":"fire"},
 				{"pos":"n", "zh":"热的东西", "en":"hot object"},
 				{"pos":"adj", "zh":"热的", "en":"hot"},
-				{"pos":"n", "zh":"一天; 日子", "en":"a day"},
+				{"pos":"n", "zh":"一天; 日子", "en":"a day"}
 			],
 			"eg":[], 
 			"origin":{"zh":"道本语 seli 火", "en":"Toki Pona: seli (fire)"},
@@ -62,7 +62,7 @@ var DICTIONARY = {
 		"celi lata":{
 			"def":[
 				{"pos":"n", "zh":"又冷又热的东西", "en":"object that is cold and hot"},
-				{"pos":"n", "zh":"萤火虫; 星星; 月亮", "en":"firefly; star; moon"},
+				{"pos":"n", "zh":"萤火虫; 星星; 月亮", "en":"firefly; star; moon"}
 			],
 			"eg":[
 
@@ -78,7 +78,7 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"adj", "zh":"良好的; 最强的", "en":"good; the best"},
 				{"pos":"adv", "zh":"很; 十分; 最", "en":"very; the most"},
-				{"pos":"int", "zh":"好的; 表示接受或答应", "en":"OK; meeting with acceptance"},
+				{"pos":"int", "zh":"好的; 表示接受或答应", "en":"OK; meeting with acceptance"}
 			],
 			"eg":[], 
 			"origin":{"zh":"协和语 大大(da da) 非常", "en":"Kyowa-go: 大大(da da) (very)"},
@@ -93,13 +93,13 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"pron", "zh":"何人", "en":"who"},
 				{"pos":"pron", "zh":"何物", "en":"what"},
-				{"pos":"pron", "zh":"何处", "en":"where"},
+				{"pos":"pron", "zh":"何处", "en":"where"}
 			],
 			"eg":[], "status":1},
 		"domu":{
 			"def":[
 				{"pos":"v", "zh":"聚集", "en":"gather together"},
-				{"pos":"v", "zh":"躺下", "en":"lie down"},
+				{"pos":"v", "zh":"躺下", "en":"lie down"}
 			],
 			"eg":[], "status":1},
 		"du":{
@@ -149,10 +149,10 @@ var DICTIONARY = {
 			"origin":{"zh":"道本语 ike 坏的", "en":"Toki Pona: ike (bad)"},
 			"status":3},
 		"in":{
-			"def":[{"pos":"prep", "zh":"在里面", "en":"in; inside"}],
+			"def":[{"pos":"prep", "zh":"在……里面", "en":"in; inside"}],
 			"eg":[], 
 			"origin":{"zh":"英语 in 在里面", "en":"English: in (in)"},
-			"status":0},
+			"status":3},
 		"ka":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -179,7 +179,7 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"五", "en":"five"},
 				{"pos":"n", "zh":"手", "en":"hand"},
 				{"pos":"v", "zh":"劳动", "en":"labour"},
-				{"pos":"v", "zh":"给予", "en":"give"},
+				{"pos":"v", "zh":"给予", "en":"give"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 manus 手", "en":"Latin: manus (hand)"},
@@ -196,7 +196,7 @@ var DICTIONARY = {
 				{"pos":"n", "zh":"喜欢的东西", "en":"favourite thing"},
 				{"pos":"adj", "zh":"喜好上好的", "en":"favourable"},
 				{"pos":"adj", "zh":"好吃的", "en":"delicious"},
-				{"pos":"adj", "zh":"动物身上出的", "en":"taken from the animal"},
+				{"pos":"adj", "zh":"动物身上出的", "en":"taken from the animal"}
 			],
 			"eg":[
 				{
@@ -259,7 +259,7 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"n", "zh":"雷电", "en":"lightning"},
 				{"pos":"n", "zh":"警示", "en":"warning"},
-				{"pos":"n", "zh":"贡品", "en":"tribute"},
+				{"pos":"n", "zh":"贡品", "en":"tribute"}
 			],
 			"eg":[], "status":1},
 		"nunu":{
@@ -286,7 +286,7 @@ var DICTIONARY = {
 		"sada":{
 			"def":[
 				{"pos":"n", "zh":"固体; 岩石", "en":"solid; stone"},
-				{"pos":"adj", "zh":"硬的", "en":"hard (not soft)"},
+				{"pos":"adj", "zh":"硬的", "en":"hard (not soft)"}
 			],
 			"eg":[], "status":3},
 		"sama":{
@@ -314,7 +314,7 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"n", "zh":"一", "en":"one"},
 				{"pos":"n", "zh":"丘丘人的神明", "en":"a god of Hilichurls"},
-				{"pos":"n", "zh":"原初之物", "en":"genesis"},
+				{"pos":"n", "zh":"原初之物", "en":"genesis"}
 			],
 			"eg":[], "status":3},
 		"unu du":{
@@ -338,7 +338,7 @@ var DICTIONARY = {
 		"vin":{
 			"def":[
 				{"pos":"v", "zh":"防止", "en":"prevent"},
-				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"},
+				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 vinum 酒", "en":"Latin: vinum (wine)"},

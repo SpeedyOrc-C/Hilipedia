@@ -95,3 +95,7 @@ img:active {
     transition-duration: 0.1s;
 }
 
+.inline {
+    display: inline-block;
+}
+

@@ -2,6 +2,10 @@
     font-family: "HanyiCJKL";
     src: url("../../font/HanyiCJKLATIN.ttf");
 }
+@font-face {
+    font-family: "KhaenriahLATIN";
+    src: url("../../font/KhaenriahLATIN.ttf");
+}
 
 header {
     font-family: HanyiCJKL, Georgia, serif;
