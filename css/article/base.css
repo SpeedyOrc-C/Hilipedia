@@ -51,16 +51,10 @@ td {
 
     width: fit-content;
     padding: 0.2rem 0.5rem;
-
-    transition: background-color, color;
-    transition-duration: 0.1s;
 }
 .corpus-article:hover {
     background-color: #444;
     color: #FFF;
-
-    transition: background-color, color;
-    transition-duration: 0.05s;
 }
 .ca-text::before {content: "📄";}
 .ca-book::before {content: "📖"}

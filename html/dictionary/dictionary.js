@@ -45,7 +45,9 @@ var DICTIONARY = {
 				{"hil":"lata boya", "zh":"蓝色", "en":"blue"},
 				{"hil":"nini boya", "zh":"白色", "en":"white"},
 				{"hil":"nunu/sama boya", "zh":"黑色", "en":"black"}
-			], "status":3},
+			],
+			"origin":{"zh":"土耳其语 boya 颜料; 染料", "en":"Turkish: boya (paint; dye)"} 
+			, "status":3},
 		"buka":{
 			"def":[{"pos":"n", "zh":"肚子", "en":"belly"}],
 			"eg":[], "status":1},
@@ -255,6 +257,7 @@ var DICTIONARY = {
 		"muhe":{
 			"def":[{"pos":"v", "zh":"喜欢; 想要", "en":"love; like; want"}],
 			"eg":[], "status":3},
+		"nesina":{"def":[], "eg":[], "status":0},
 		"nini":{
 			"def":[
 				{"pos":"n", "zh":"雷电", "en":"lightning"},
