@@ -105,7 +105,10 @@ var DICTIONARY = {
 			],
 			"eg":[], "status":1},
 		"du":{
-			"def":[{"pos":"n", "zh":"二", "en":"two"}],
+			"def":[
+				{"pos":"n", "zh":"二", "en":"two"},
+				{"pos":"det", "zh":"你的", "en":"your"}
+			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 duo 二", "en":"Latin: duo (two)"},
 			"status":3},
@@ -162,7 +165,7 @@ var DICTIONARY = {
 			"def":[{"pos":"adj", "zh":"弱; 弱小", "en":"weak"}],
 			"eg":[], "status":3},
 		"kundala":{
-			"def":[{"pos":"n", "zh":"弱者", "en":"the weak one"}],
+			"def":[{"pos":"v", "zh":"打败", "en":"defeat"}],
 			"eg":[], "status":1},
 		"kuzi":{
 			"def":[{"pos":"", "zh":""}],
@@ -175,13 +178,16 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"lawa":{
 			"def":[{"pos":"n", "zh":"首领; 头目", "en":"leader"}],
-			"eg":[], "status":3},
+			"eg":[],
+			"origin":{"zh":"道本语 lawa 头", "en":"Toki Pona: lawa (head)"},
+			"status":3},
 		"mani":{
 			"def":[
 				{"pos":"n", "zh":"五", "en":"five"},
 				{"pos":"n", "zh":"手", "en":"hand"},
 				{"pos":"v", "zh":"劳动", "en":"labour"},
-				{"pos":"v", "zh":"给予", "en":"give"}
+				{"pos":"v", "zh":"给予", "en":"give"},
+				{"pos":"v", "zh":"帮助", "en":"help"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 manus 手", "en":"Latin: manus (hand)"},
@@ -207,7 +213,10 @@ var DICTIONARY = {
 					"comment":{"zh":"水里的肉", "en":"meat in the water"}
 				}
 			], "status":2},
-		"mitino":{
+		"mito":{
+			"def":[{"pos":"v", "zh":"知道", "en":"know"}],
+			"eg":[], "status":"1"},
+		"mitono":{
 			"def":[{"pos":"n", "zh":"丘丘暴徒", "en":"Hilichurl guard"}],
 			"eg":[], "status":1},
 		"mosi":{
@@ -256,7 +265,7 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"muhe":{
 			"def":[{"pos":"v", "zh":"喜欢; 想要", "en":"love; like; want"}],
-			"eg":[], "status":3},
+			"eg":[], "status":2},
 		"nesina":{"def":[], "eg":[], "status":0},
 		"nini":{
 			"def":[
@@ -308,8 +317,8 @@ var DICTIONARY = {
 			"def":[{"pos":"v", "zh":"拿", "en":"take"}],
 			"eg":[], "status":1},
 		"tomo":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"朋友", "en":"friend"}],
+			"eg":[], "status":1},
 		"unta":{
 			"def":[{"pos":"prep", "zh":"在……之后", "en":"after"}],
 			"eg":[], "status":1},
@@ -329,6 +338,7 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"n", "zh":"山", "en":"mountain"},
 				{"pos":"v", "zh":"超越", "en":"go beyond"},
+				{"pos":"adj", "zh":"高", "en":"high"},
 				{"pos":"prep", "zh":"于……之上", "en":"over"}
 			],
 			"eg":[], "status":3},
@@ -356,19 +366,22 @@ var DICTIONARY = {
 			"def":[{"pos":"pron", "zh":"你 (通格)", "en":"you (absolutive case)"}],
 			"eg":[], "status":1},
 		"yeye":{
-			"def":[{"pos":"pron", "zh":"你们", "en":"you (plural)"}],
+			"def":[{"pos":"pron", "zh":"你们 (通格)", "en":"you (plural)"}],
 			"eg":[], "status":1},
 		"yo":{
 			"def":[{"pos":"pron", "zh":"你 (作格)", "en":"you (ergative case)"}],
 			"eg":[], "status":1},
 		"yoyo":{
 			"def":[
-				{"pos":"pron", "zh":"你们", "en":"you (plural)"},
+				{"pos":"pron", "zh":"你们 (作格)", "en":"you (plural)"},
 				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"}
 			],
 			"eg":[], "status":1},
 		"zido":{
-			"def":[{"pos":"n", "zh":"东西", "en":"thing"}],
+			"def":[
+				{"pos":"pron", "zh":"这个", "en":"this"},
+				{"pos":"pron", "zh":"此处", "en":"here"}
+			],
 			"eg":[], "status":3}
 	},
 	"posAbbr":{ // 单词词性缩写

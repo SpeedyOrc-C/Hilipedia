@@ -28,6 +28,12 @@ p {
     font-size: 1.1rem;
     line-height: 1.8rem;
 }
+a, a:visited {
+    text-decoration: none;
+}
+sub, sup {
+    font-size: 0.7rem;
+}
 blockquote {
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -71,13 +77,15 @@ td {
     user-select: none;
 }
 
-img {
-    margin: 0 35%;
+img.portrait {
     width: 30%;
     transform: scale(1);
 
     transition: all;
     transition-duration: 0.1s;
+}
+img.landscape {
+    width: 60%;
 }
 img:hover {
     transform: scale(1.5);
