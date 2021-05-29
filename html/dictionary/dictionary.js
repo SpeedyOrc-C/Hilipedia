@@ -271,8 +271,7 @@ var DICTIONARY = {
 			"def":[
 				{"pos":"n", "zh":"雷电", "en":"lightning"},
 				{"pos":"n", "zh":"警示", "en":"warning"},
-				{"pos":"n", "zh":"贡品", "en":"tribute"},
-				{"pos":"v", "zh":"消失", "en":"disappear"}
+				{"pos":"n", "zh":"贡品", "en":"tribute"}
 			],
 			"eg":[], "status":1},
 		"nunu":{
@@ -319,9 +318,7 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"tomo":{
 			"def":[{"pos":"n", "zh":"朋友", "en":"friend"}],
-			"eg":[],
-			"origin":{"zh":"日语 ともだち(tomodachi) 朋友", "en":"Japanese: ともだち(tomodachi) (friend)"},
-			"status":1},
+			"eg":[], "status":1},
 		"unta":{
 			"def":[{"pos":"prep", "zh":"在……之后", "en":"after"}],
 			"eg":[], "status":1},
