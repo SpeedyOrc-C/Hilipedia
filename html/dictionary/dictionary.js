@@ -3,17 +3,6 @@
 // 词典正文
 var DICTIONARY = {
 	"dictionary_proper":{
-		//	单词的格式
-		// "丘丘语单词":{
-		// 	"def":[
-		// 		{
-		// 			"pos":"词性",
-		// 			"zh":"中文释义",
-		// 			"en":"英语释义"
-		// 		}
-		// 	]
-		// },
-		
 		"a":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -101,25 +90,27 @@ var DICTIONARY = {
 		"domu":{
 			"def":[
 				{"pos":"v", "zh":"聚集", "en":"gather together"},
-				{"pos":"v", "zh":"躺下", "en":"lie down"}
+				{"pos":"v", "zh":"躺下", "en":"lie down"},
+				{"pos":"n", "zh":"家人", "en":"family member"}
 			],
-			"eg":[], "status":1},
+			"eg":[], 
+			"origin":{"zh":"拉丁语 domire 睡觉", "en":"Latin: domire (sleep)"},
+			"status":1},
 		"du":{
 			"def":[
-				{"pos":"n", "zh":"二", "en":"two"},
-				{"pos":"det", "zh":"你的", "en":"your"}
+				{"pos":"n", "zh":"二", "en":"two"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 duo 二", "en":"Latin: duo (two)"},
-			"status":3},
+			"status":1},
 		"dudu":{
 			"def":[{"pos":"n", "zh":"四", "en":"four"}],
 			"eg":[], 
 			"origin":{"zh":"道本语 tu tu 四", "en":"Toki Pona: tu tu (four)"},
 			"status":3},
 		"eleka":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"部落", "en":"tribe"}],
+			"eg":[], "status":3},
 		"guru":{
 			"def":[{"pos":"adj", "zh":"饿得咕咕叫的", "en":"hungry"}],
 			"eg":[], "status":1},
@@ -266,7 +257,7 @@ var DICTIONARY = {
 		"muhe":{
 			"def":[{"pos":"v", "zh":"喜欢; 想要", "en":"love; like; want"}],
 			"eg":[], "status":2},
-		"nesina":{"def":[], "eg":[], "status":0},
+		"nesina":{"def":[{"pos":"", "zh":""}], "eg":[], "status":0},
 		"nini":{
 			"def":[
 				{"pos":"n", "zh":"雷电", "en":"lightning"},
@@ -285,7 +276,7 @@ var DICTIONARY = {
 			"def":[{"pos":"adv", "zh":"不; 别; 表示否定", "en":"no; not"}],
 			"eg":[], "status":1},
 		"odomu":{
-			"def":[{"pos":"n", "zh":"朋友; 同志", "en":"friend; comrade"}],
+			"def":[{"pos":"n", "zh":"外人; 陌生人", "en":"outsider; stranger"}],
 			"eg":[], "status":1},
 		"olah":{
 			"def":[{"pos":"int", "zh":"你好", "en":"Hello; How are you?"}],
@@ -312,8 +303,8 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"tiga":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"木棍", "en":"stick"}],
+			"eg":[], "status":1},
 		"todo":{
 			"def":[{"pos":"v", "zh":"拿", "en":"take"}],
 			"eg":[], "status":1},
