@@ -89,9 +89,9 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"domu":{
 			"def":[
+				{"pos":"n", "zh":"家人", "en":"family member"},
 				{"pos":"v", "zh":"聚集", "en":"gather together"},
-				{"pos":"v", "zh":"躺下", "en":"lie down"},
-				{"pos":"n", "zh":"家人", "en":"family member"}
+				{"pos":"v", "zh":"躺下", "en":"lie down"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 domire 睡觉", "en":"Latin: domire (sleep)"},
@@ -122,11 +122,7 @@ var DICTIONARY = {
 			],
 			"eg":[
 				{
-					"hil":"kucha gusha",
-					"zh":"种子", "en":"seed"
-				},
-				{
-					"hil":"unu gusha",
+					"hil":"kucha gusha / unu gusha",
 					"zh":"种子", "en":"seed"
 				}
 			], "status":2},
@@ -174,11 +170,11 @@ var DICTIONARY = {
 			"status":3},
 		"mani":{
 			"def":[
+				{"pos":"v", "zh":"给予", "en":"give"},
+				{"pos":"v", "zh":"帮助", "en":"help"},
 				{"pos":"n", "zh":"五", "en":"five"},
 				{"pos":"n", "zh":"手", "en":"hand"},
-				{"pos":"v", "zh":"劳动", "en":"labour"},
-				{"pos":"v", "zh":"给予", "en":"give"},
-				{"pos":"v", "zh":"帮助", "en":"help"}
+				{"pos":"v", "zh":"劳动", "en":"labour"}
 			],
 			"eg":[], 
 			"origin":{"zh":"拉丁语 manus 手", "en":"Latin: manus (hand)"},
@@ -260,10 +256,9 @@ var DICTIONARY = {
 		"nesina":{"def":[{"pos":"", "zh":""}], "eg":[], "status":0},
 		"nini":{
 			"def":[
-				{"pos":"n", "zh":"雷电", "en":"lightning"},
-				{"pos":"n", "zh":"警示", "en":"warning"},
-				{"pos":"n", "zh":"贡品", "en":"tribute"},
-				{"pos":"v", "zh":"消失", "en":"disappear"}
+				{"pos":"n", "zh":"空气", "en":"air"},
+				{"pos":"v", "zh":"消失", "en":"disappear"},
+				{"pos":"n", "zh":"警示", "en":"warning"}
 			],
 			"eg":[], "status":1},
 		"nunu":{
@@ -351,7 +346,11 @@ var DICTIONARY = {
 			"origin":{"zh":"拉丁语 vinum 酒", "en":"Latin: vinum (wine)"},
 			"status":1},
 		"ya":{
-			"def":[{"pos":"n", "zh":"一个人", "en":"a person"}],
+			"def":[
+				{"pos":"n", "zh":"人", "en":"a person"},
+				{"pos":"n", "zh":"东西", "en":"a thing"},
+				{"pos":"pron", "zh":"第三人称代词", "en":"third personal pronoun"}
+			],
 			"eg":[], "status":1},
 		"yaya":{
 			"def":[{"pos":"n", "zh":"一群人", "en":"people"}],
@@ -401,6 +400,8 @@ function displayDictionary (
 	var PROPER = DICTIONARY["dictionary_proper"]
 	var WORDS = Object.keys(PROPER)
 	var POSABBR = DICTIONARY["posAbbr"]
+
+	var properInnerHtml = ""
 	
 	WORDS.forEach(function(word) { // 依次渲染每一个单词
 		
@@ -415,7 +416,7 @@ function displayDictionary (
 		else if (WORD["status"] == 3) status = "official-sus"
 		
 		// 单词本身
-		dictionary_proper.innerHTML += `
+		properInnerHtml += `
 		<div class="single-word" the-word="${word}">
 			<div class="the-word word-status-${status}">
 				${word}
@@ -430,7 +431,7 @@ function displayDictionary (
 			if (part_of_speech === undefined) part_of_speech = ""
 			else part_of_speech = "["+part_of_speech[lang]+"]"
 
-			dictionary_proper.innerHTML += `
+			properInnerHtml += `
 				<div class="word-definition">
 					<div class="part-of-speech">
 						${part_of_speech}
@@ -439,7 +440,7 @@ function displayDictionary (
 				</div>
 			`
 		}
-		dictionary_proper.innerHTML += `
+		properInnerHtml += `
 			</div>
 			<div class="word-examples">
 		`
@@ -455,7 +456,7 @@ function displayDictionary (
 				example_comment = "(" + example_comment + ")"
 			}
 
-			dictionary_proper.innerHTML += `
+			properInnerHtml += `
 				<div class="word-example">
 					<div class="example-hilichurlian">
 						· ${example_hilichurlian}
@@ -470,7 +471,7 @@ function displayDictionary (
 			`
 		}
 	
-		dictionary_proper.innerHTML += `
+		properInnerHtml += `
 			</div>
 			<div class="word-origin">
 		`
@@ -478,13 +479,15 @@ function displayDictionary (
 		if (WORD.origin === undefined) var word_origin = ""
 		else word_origin = WORD.origin[lang]
 
-		dictionary_proper.innerHTML += `
+		properInnerHtml += `
 				<code>${word_origin}</code>
 			</div>
 		</div>
 		<hr>
 		`
 	})
+
+	dictionary_proper.innerHTML = properInnerHtml
 }
 
 ////////// 配置部分 //////////
