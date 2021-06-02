@@ -11,7 +11,7 @@ article {
 }
 
 h1, h2, h3, p, blockquote, td, .text-translation {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, '宋体', serif;
     color: #333;
 }
 h1 {
