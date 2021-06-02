@@ -30,10 +30,12 @@ header {
 
 .the-word, .example-hilichurlian, .example-translation {
     font-family: Georgia, serif;
+    font-variant-ligatures: normal;
 }
 
 .translation, .example-comment {
     font-family: Georgia, serif;
+    font-variant-ligatures: normal;
 }
 
 .btn {
