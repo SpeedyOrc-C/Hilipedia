@@ -118,6 +118,13 @@ img:active {
     transform: scale(2.5);
     transition-duration: 0.1s;
 }
+img.language-icon:hover, img.language-icon:active, img.language-icon {
+    height: 1rem;
+    width: 2rem;
+    transform: none;
+    transition: none;
+    cursor: default;
+}
 
 .inline {
     display: inline-block;

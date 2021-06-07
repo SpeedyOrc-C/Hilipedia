@@ -21,7 +21,10 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"biat":{
-			"def":[{"pos":"int", "zh":"他妈的", "en":"Damn it"}],
+			"def":[
+				{"pos":"int", "zh":"他妈的", "en":"Damn it"},
+				{"pos":"v", "zh":"肏", "en":"fuck"}
+			],
 			"eg":[], 
 			"origin":{"zh":"俄语 блядь(blyad') 他妈的", "en":"Russian: блядь(blyad') (Damn it)"},
 			"status":1},
@@ -63,8 +66,10 @@ var DICTIONARY = {
 		"celi upa":{
 			"def":[{"pos":"n", "zh":"太阳", "en":"sun"}],
 			"eg":[], "status":3
-		}
-		,
+		},
+		"da":{
+			"def":[{"pos":"", "zh":"同 dada", "en":"refer to “dada”"}],
+			"eg":[], "status":2},
 		"dada":{
 			"def":[
 				{"pos":"adj", "zh":"良好的; 最强的", "en":"good; the best"},
@@ -247,6 +252,9 @@ var DICTIONARY = {
 					"comment":{"zh":"睡觉之后的时间", "en":"Time after dinner"}
 				}
 			], "status":2},
+		"mosino":{
+			"def":[],
+			"eg":[], "status":0},
 		"movo":{
 			"def":[{"pos":"v", "zh":"移动", "en":"move"}],
 			"eg":[], "status":1},
@@ -279,6 +287,9 @@ var DICTIONARY = {
 		"plata":{
 			"def":[{"pos":"v", "zh":"打; 攻击", "en":"attack"}],
 			"eg":[], "status":1},
+		"plama":{
+			"def":[],
+			"eg":[], "status":0},
 		"pupu":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -339,12 +350,20 @@ var DICTIONARY = {
 			"eg":[], "status":1},
 		"vin":{
 			"def":[
-				{"pos":"v", "zh":"防止", "en":"prevent"},
-				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"}
+				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"},
 			],
-			"eg":[], 
+			"eg":[
+				{
+					"hil":"vin plata", 
+					"zh":"盾牌", "en":"shield",
+					"comment":{"zh":"酒桶盖作为战斗防具使用", "en":"Barrel as container of wine, its lid is used as shield in a battle."}
+				}
+			], 
 			"origin":{"zh":"拉丁语 vinum 酒", "en":"Latin: vinum (wine)"},
 			"status":1},
+		"wulyena":{
+			"def":[],
+			"eg":[], "status":0},
 		"ya":{
 			"def":[
 				{"pos":"n", "zh":"人", "en":"a person"},
@@ -365,10 +384,7 @@ var DICTIONARY = {
 			"def":[{"pos":"pron", "zh":"你 (作格)", "en":"you (ergative case)"}],
 			"eg":[], "status":1},
 		"yoyo":{
-			"def":[
-				{"pos":"pron", "zh":"你们 (作格)", "en":"you (plural)"},
-				{"pos":"n", "zh":"酒", "en":"wine (alcohol)"}
-			],
+			"def":[{"pos":"pron", "zh":"你们 (作格)", "en":"you (plural)"}],
 			"eg":[], "status":1},
 		"zido":{
 			"def":[
