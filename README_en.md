@@ -6,6 +6,7 @@
 This repository contains a static website, it includes all the Hilichurlian text
 appeared in the game *Genshin Impact* and an unofficial dictionary.
 We hope it will make the things easier. 😄  
+Of course, those ephemeral ones shall be recorded as Hilichurlian...
 
 ----------
 
