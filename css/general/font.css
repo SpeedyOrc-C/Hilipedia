@@ -6,6 +6,14 @@
     font-family: "KhaenriahLATIN";
     src: url("../../font/KhaenriahLATIN.ttf");
 }
+@font-face {
+    font-family: "MondstadtLATIN";
+    src: url("../../font/MondstadtLATIN.ttf")
+}
+/* @font-face {
+    font-family: "InazumaLATIN";
+    src: url("../../font/");
+} */
 
 header {
     font-family: HanyiCJKL, Georgia, serif;
