@@ -18,8 +18,8 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"biaodomu":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"n", "zh":"坏陌生人", "en":"bad stranger"}],
+			"eg":[], "status":1},
 		"biat":{
 			"def":[
 				{"pos":"int", "zh":"他妈的", "en":"Damn it"},
@@ -303,8 +303,8 @@ var DICTIONARY = {
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
 		"si":{
-			"def":[{"pos":"", "zh":""}],
-			"eg":[], "status":0},
+			"def":[{"pos":"int", "zh":"放在句末以加强语气", "en":"ending word to intensify the manner of speaking"}],
+			"eg":[], "status":1},
 		"shato":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -342,6 +342,10 @@ var DICTIONARY = {
 				{"pos":"prep", "zh":"于……之上", "en":"over"}
 			],
 			"eg":[], "status":3},
+		"upakundala":{
+			"def":[{"pos":"n", "zh":"雷电; 闪电", "en":"thunder; lightning"}],
+			"eg":[],
+			"status":1},
 		"upano":{
 			"def":[{"pos":"n", "zh":"天上的东西", "en":"a thing in the sky"}],
 			"eg":[], "status":3},
