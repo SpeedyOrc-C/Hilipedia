@@ -7,7 +7,7 @@
 }
 
 .btn-normal, .btn-critical {
-    background-color: #eee;
+    background-color: #ffffff;
     border: 1px solid gray;
     color: #222;
 }
@@ -18,7 +18,8 @@
     transition-duration: 0.1s;
 }
 .btn-critical:hover {
-    background-color: orange;
+    background-color: coral;
+    color: white;
 }
 .btn-normal:active, .btn-critical:active {
     background-color: white;

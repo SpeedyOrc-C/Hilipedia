@@ -1,13 +1,19 @@
 #dictionary-proper, #search-instruction, #dictionary-panel {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 0.5rem 0.1rem gray;
+    background-color: rgb(248, 241, 226);
+    box-shadow: 0 0 0.5rem 0.01rem gray;
     
     margin: 1rem auto;
     border-radius: 0.3rem;
     padding: 1rem;
     width: 30rem;
 }
+@media screen and (max-width: 960px) {
+    #dictionary-proper {
+        width: fit-content;
+    }
+}
+
 #dictionary-panel {
     width: fit-content;
 }
@@ -67,7 +73,6 @@
     margin: 0 1rem;
     
     color: #333;
-
 }
 #search-instruction-close-btn {
     position: absolute;
@@ -89,7 +94,8 @@
     transition: color;
     transition-duration: 0.1s;
 }
-/*****************/
+
+/* 词典正文 */
 
 .single-word {
     display: block;

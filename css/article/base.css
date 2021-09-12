@@ -9,6 +9,12 @@ article {
     margin: 2rem auto;
     padding: 1rem 4rem 4rem 4rem;
 }
+@media screen and (max-width: 960px) {
+    article {
+        width: fit-content;
+        padding: 1rem 1rem 4rem 1rem;
+    }
+}
 
 h1, h2, h3, p, blockquote, td, .text-translation {
     font-family: Georgia, 'Times New Roman', Times, '宋体', serif;
@@ -17,6 +23,7 @@ h1, h2, h3, p, blockquote, td, .text-translation {
 h1 {
     font-size: 2.5rem;
     border-bottom: 1px solid #0003;
+    text-align: center;
 }
 h2 {
     font-size: 1.6rem;
