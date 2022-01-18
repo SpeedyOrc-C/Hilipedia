@@ -1,3 +1,7 @@
+@import url(global.css);
+
+.repo-link { font-size: 1.5rem; }
+
 #welcome-banner {
     margin: 1rem auto;
     padding: 0 1rem;
@@ -7,6 +11,8 @@
     border-left: 3px solid #555;
     border-right: 3px solid #555;
 
+    font-family: Georgia, serif;
+    font-weight: bold;
     font-size: 2rem;
 }
 
@@ -23,13 +29,20 @@
 }
 
 .category-link {
-    display: inline-block;
     margin: 1rem;
 
     cursor: pointer;
 
     transition: transform;
     transition-duration: 0.5s;
+
+    font-family: Georgia, serif;
+    color: #222;
+}
+.category-link:hover {
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.2s;
 }
 .category-title {
     font-size: 2rem;
@@ -41,9 +54,4 @@
     font-size: 1.2rem;
     user-select: none;
     -webkit-user-select: none;
-}
-.category-link:hover {
-    transform: scale(1.05);
-    transition: all;
-    transition-duration: 0.2s;
 }

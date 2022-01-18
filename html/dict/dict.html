@@ -6,10 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../css/general/font.css" rel="stylesheet" />
-    <link href="../../css/general/base.css" rel="stylesheet" />
-    <link href="../../css/dictionary/base.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../css/home/button.css">
+    <link rel="stylesheet" href="../../css/dict.css">
 
     <title>丘汉词典 Hili-Eng Dictionary</title>
 </head>
@@ -26,28 +23,37 @@
         <div id="search-label">
             查询
         </div>
-        <div id="search-instruction-close-btn" onclick="hideSearchInstruction()">✖</div>
+        <div id="search-instruction-close-btn"
+            onclick="hide_search_hint()">✖</div>
     </div>
 
     <div id="dictionary-panel">
-        <!--词类筛选按钮-->
-        <div class="btn btn-normal" onclick="setShowUnknownWord(false)">
+        <div class="btn btn-normal"
+            onclick="set_do_show_unknown_word(false)">
             词典正文
         </div>
-        <div class="btn btn-normal" onclick="setShowUnknownWord(true)">
+        
+        <div class="btn btn-normal"
+            onclick="set_do_show_unknown_word(true)">
             显示未知词语
         </div>
+        
         <div class="hr-blank"></div>
-        <!--语言切换按钮-->
-        <div class="btn btn-normal" onclick="setLang('zh')">
+        
+        <div class="btn btn-normal"
+            onclick="set_lang('zh')">
             中文 Chinese
         </div>
-        <div class="btn btn-normal" onclick="setLang('en')">
+        
+        <div class="btn btn-normal"
+            onclick="set_lang('en')">
             English 英语
         </div>
+        
         <div class="hr-blank"></div>
-        <!--删除 Cookie-->
-        <div class="btn btn-critical" onclick="resetCookie(true)">
+        
+        <div class="btn btn-critical"
+            onclick="reset(true)">
             重置 Cookie
         </div>
     </div>
@@ -68,6 +74,6 @@
     
 </body>
 
-<script src="dictionary.js"></script>
+<script src="dict.js"></script>
 
 </html>

@@ -1,19 +1,18 @@
-body {
-    background-color: rgb(224, 216, 200);
-}
+@import url(global.css);
 
-article {
-    background-color: rgb(248, 241, 226);
-    box-shadow: 0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.2);
-    width: 43rem;
-    margin: 2rem auto;
-    padding: 1rem 4rem 4rem 4rem;
-}
 @media screen and (max-width: 960px) {
     article {
         width: fit-content;
         padding: 1rem 1rem 4rem 1rem;
     }
+}
+
+article {
+    background-color: var(--article-bg-color);
+    box-shadow: 0 0 0.7rem 0.1rem #0003;
+    width: 43rem;
+    margin: 2rem auto;
+    padding: 1rem 4rem 4rem 4rem;
 }
 
 h1, h2, h3, p, blockquote, td, .text-translation {
@@ -43,6 +42,8 @@ sub, sup {
 }
 
 blockquote {
+    border-left: 3px solid #0002;
+    padding-left: 1rem;
     font-size: 1.1rem;
     line-height: 1.5rem;
     width: fit-content;
@@ -80,35 +81,6 @@ td.wide {
     padding: 0.5rem;
 }
 
-.corpus-article {
-    user-select: none;
-    white-space: pre;
-    font-size: 1.2rem;
-
-    cursor: pointer;
-
-    width: fit-content;
-    padding: 0.2rem 0.5rem;
-}
-.corpus-article:hover {
-    background-color: #444;
-    color: #FFF;
-}
-.ca-text::before {content: "📄";}
-.ca-book::before {content: "📖"}
-.ca-quest::before {content: "❗️";}
-.ca-bbs::before{content: "💬";}
-
-.corpus-article-legend {
-    background-color: rgba(255, 255, 255, 0.6);
-
-    position: fixed;
-    bottom: 0;
-    padding: 1em;
-
-    user-select: none;
-}
-
 img.portrait {
     width: 30%;
     transform: scale(1);
@@ -135,8 +107,3 @@ img.language-icon:hover, img.language-icon:active, img.language-icon {
     transition: none;
     cursor: default;
 }
-
-.inline {
-    display: inline-block;
-}
-

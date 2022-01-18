@@ -1,8 +1,7 @@
-////////// 词典部分 //////////
+// DICTIONARY PROPER
 
-// 词典正文
 var DICTIONARY = {
-	"dictionary_proper":{
+	"proper":{
 		"a":{
 			"def":[{"pos":"", "zh":""}],
 			"eg":[], "status":0},
@@ -397,7 +396,7 @@ var DICTIONARY = {
 			],
 			"eg":[], "status":3}
 	},
-	"posAbbr":{ // 单词词性缩写
+	"pos_abbr":{ // Abbreviation of word type
 		"adj":{"zh":"形", "en":"adj"},
 		"adv":{"zh":"副", "en":"adv"},
 		"n":{"zh":"名", "en":"n"},
@@ -410,48 +409,49 @@ var DICTIONARY = {
 		"place":{"zh":"地", "en":"place"}
 	}
 }
-var dictionary_proper = document.getElementById("dictionary-proper")
-// 渲染词典
-function displayDictionary (
-	showUnknownWord = false,
-	lang = "zh"
-) {
-	dictionary_proper.innerHTML = "";
-	var PROPER = DICTIONARY["dictionary_proper"]
-	var WORDS = Object.keys(PROPER)
-	var POSABBR = DICTIONARY["posAbbr"]
+var html_proper = document.getElementById("dictionary-proper")
 
-	var properInnerHtml = ""
+render_dictionary = (
+	do_show_unknown_word = false,
+	lang = 'zh'
+) => {
+
+	html_proper.innerHTML = '';
+	var proper = DICTIONARY['proper']
+	var words = Object.keys(proper)
+	var pos_abbr = DICTIONARY['pos_abbr']
+	var proper_inner_html = ''
 	
-	WORDS.forEach(function(word) { // 依次渲染每一个单词
+	words.forEach((word) => {
 		
-		var WORD = PROPER[word]
-		var status = ""
-		if (WORD["status"] == 0) { 
-			status = "none"
-			if (!showUnknownWord) return // 忽略没有释义的单词
-		}
-		else if (WORD["status"] == 1) status = "folk" // 单词释义确定程度的 CSS 类
-		else if (WORD["status"] == 2) status = "official"
-		else if (WORD["status"] == 3) status = "official-sus"
+		var word_data = proper[word]
+		var status = {
+			0: 'none',
+			1: 'folk',
+			2: 'official',
+			3: 'official-sus'
+		} [word_data['status']]
+		if (status == 'none' && !do_show_unknown_word) return
 		
-		// 单词本身
-		properInnerHtml += `
+		proper_inner_html += `
 		<div class="single-word" the-word="${word}">
 			<div class="the-word word-status-${status}">
 				${word}
 			</div>
 			<div class="word-definitions">
 		`
-		// 依次渲染每一个释义
-		for (i=0; i<WORD["def"].length; i++) {
+		// Definitions
+		for (let def_i = 0; def_i<word_data['def'].length; def_i++) {
 
-			var part_of_speech = POSABBR[WORD["def"][i]["pos"]]
-			var translation = WORD["def"][i][lang]
-			if (part_of_speech === undefined) part_of_speech = ""
-			else part_of_speech = "["+part_of_speech[lang]+"]"
+			var part_of_speech = pos_abbr[word_data['def'][def_i]['pos']]
+			if (part_of_speech === undefined)
+				part_of_speech = ''
+			else
+				part_of_speech = '[' + part_of_speech[lang] + ']'
+			
+			var translation = word_data['def'][def_i][lang]
 
-			properInnerHtml += `
+			proper_inner_html += `
 				<div class="word-definition">
 					<div class="part-of-speech">
 						${part_of_speech}
@@ -460,29 +460,30 @@ function displayDictionary (
 				</div>
 			`
 		}
-		properInnerHtml += `
+
+		proper_inner_html += `
 			</div>
 			<div class="word-examples">
 		`
-		// 依次渲染每一个例子
-		for (i=0; i<WORD["eg"].length; i++) {
+		// Examples
+		for (let eg_i=0; eg_i<word_data['eg'].length; eg_i++) {
 
-			var example_hilichurlian = WORD["eg"][i]["hil"]
-			var example_translation = WORD["eg"][i][lang]
-			if (WORD["eg"][i]["comment"] === undefined) {
-				example_comment = ""
-			} else {
-				var example_comment = WORD["eg"][i]["comment"][lang]
-				example_comment = "(" + example_comment + ")"
+			var eg_hil = word_data['eg'][eg_i]['hil']
+			var eg_translation = word_data['eg'][eg_i][lang]
+			if (word_data['eg'][eg_i]['comment'] === undefined)
+				example_comment = ''
+			else {
+				var example_comment = word_data['eg'][eg_i]['comment'][lang]
+				example_comment = '(' + example_comment + ')'
 			}
 
-			properInnerHtml += `
+			proper_inner_html += `
 				<div class="word-example">
 					<div class="example-hilichurlian">
-						· ${example_hilichurlian}
+						· ${eg_hil}
 					</div>
 					<div class="example-translation">
-						${example_translation}
+						${eg_translation}
 					</div>
 					<div class="example-comment">
 						${example_comment}
@@ -491,15 +492,17 @@ function displayDictionary (
 			`
 		}
 	
-		properInnerHtml += `
+		proper_inner_html += `
 			</div>
 			<div class="word-origin">
 		`
-		// 如果有单源信息则显示
-		if (WORD.origin === undefined) var word_origin = ""
-		else word_origin = WORD.origin[lang]
+		// Etymology
+		if (word_data.origin === undefined)
+			var word_origin = ''
+		else
+			word_origin = word_data.origin[lang]
 
-		properInnerHtml += `
+		proper_inner_html += `
 				<code>${word_origin}</code>
 			</div>
 		</div>
@@ -507,47 +510,44 @@ function displayDictionary (
 		`
 	})
 
-	dictionary_proper.innerHTML = properInnerHtml
+	html_proper.innerHTML = proper_inner_html
 }
 
-////////// 配置部分 //////////
+// USER CONFIGURATION
 
-// 使用 Cookie 储存用户信息
-var CONFIG = {}
+var config = {}
 
-try { // 读取 Cookie
-	CONFIG = JSON.parse(document.cookie.split("=; ")[0])
-} catch (e) { resetCookie() } // 如果 Cookie 未能正常解析，则填入默认 Cookie
+// Read Cookies
+try { config = JSON.parse(document.cookie.split('=; ')[0]) }
+catch (e) { reset() } // If cookies cannot be parsed properly, it is reset.
 
-// 设置函数开始 //
-function setShowUnknownWord(value) {
-	CONFIG["showUnknownWord"] = value
-	saveConfigureAndDisplayDictionary()
+function set_do_show_unknown_word(value) {
+	config['do_show_unknown_word'] = value
+	save_and_display()
 }
-function setLang(value) {
-	CONFIG["lang"] = value
-	saveConfigureAndDisplayDictionary()
+
+function set_lang(value) {
+	config['lang'] = value
+	save_and_display()
 }
-function resetCookie(doReload=false) { // 重置 Cookie
-	document.cookie = "expires=Thu, 01 Jan 1970 00:00:00 GMT"
-	CONFIG = {
-		"showUnknownWord": false, // 是否显示未知词语
-		"lang": "zh", // 词典语言
-		"searchHintWindowUnderstand": false, // 是否已经按下了“查找”快捷键
+
+function reset(do_reload=false) {
+	document.cookie = 'expires=Thu, 01 Jan 1970 00:00:00 GMT'
+	config = {
+		'do_show_unknown_word': false,
+		'lang': 'zh',
+		'search_hint_window_understand': false,
 	}
-	document.cookie = JSON.stringify(CONFIG) // 写入默认 Cookie
-	console.log(document.cookie)
-	if (doReload) location.reload() // 刷新
+	document.cookie = JSON.stringify(config)
+	if (do_reload) location.reload()
 }
-// 结束 //
 
-function saveConfigureAndDisplayDictionary() {
-	document.cookie = JSON.stringify(CONFIG)
-	displayDictionary(
-		showUnknownWord = CONFIG["showUnknownWord"],
-		lang = CONFIG["lang"]
+function save_and_display() {
+	document.cookie = JSON.stringify(config)
+	render_dictionary(
+		do_show_unknown_word = config['do_show_unknown_word'],
+		lang = config['lang']
 	)
 }
 
-// 页面载入后直接运行
-saveConfigureAndDisplayDictionary()
+save_and_display()

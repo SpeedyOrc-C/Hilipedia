@@ -1,10 +1,11 @@
+@import url(global.css);
+
 #dictionary-proper, #search-instruction, #dictionary-panel {
     position: relative;
-    background-color: rgb(248, 241, 226);
-    box-shadow: 0 0 0.5rem 0.01rem gray;
+    background-color: var(--article-bg-color);
+    box-shadow: var(--article-shadow);
     
     margin: 1rem auto;
-    border-radius: 0.3rem;
     padding: 1rem;
     width: 30rem;
 }
@@ -17,7 +18,6 @@
 #dictionary-panel {
     width: fit-content;
 }
-/* 提示按下搜索按钮 */
 #search-instruction {
     width: fit-content;
     text-align: center;
