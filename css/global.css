@@ -4,6 +4,7 @@
     --article-bg-color: rgb(248, 241, 226);
     --nav-bg-color: rgb(248, 241, 226);
     --article-shadow: 0 0 0.7rem 0.1rem #0003;
+    --default-font: Georgia, "宋体", serif;
 }
 
 @font-face {
@@ -74,34 +75,55 @@ a { text-decoration: none; color: unset;}
     height: 0.5rem;
 }
 
+/* Settings */
+
+.setting {
+    margin: 0.5rem 0;
+}
+.setting-item {
+    margin-bottom: 0.2rem;
+
+    color: #222;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Buttons */
 
 .btn {
     display: inline-block;
     width: fit-content;
-    user-select: none;
+    line-height: 1.3rem;
+
     cursor: pointer;
-    padding: 0.5rem;
-}
-.btn-normal, .btn-critical {
-    background-color: #ffffff;
-    border: 1px solid gray;
-    color: #222;
-}
-.btn-normal:hover {
-    background-color: white;
-    color: black;
-    transition: transform;
+    user-select: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    transition: background-color;
     transition-duration: 0.1s;
 }
-.btn-critical:hover {
-    background-color: coral;
+.btn.normal, .btn.critical {
+    background-color: #ffffff;
+    border: 2px solid #0004;
+}
+.btn.critical {
+    font-weight: bold;
+}
+.btn.normal:hover {
+    background-color: #eee;
+}
+.btn.normal:active {
+    background-color: #ddd;
+}
+.btn.critical:hover {
+    background-color: rgb(209, 103, 64);
     color: white;
 }
-.btn-normal:active, .btn-critical:active {
-    background-color: white;
-    color: black;
-    transform: scale(0.95);
-    transition: transform;
-    transition-duration: 0.1s;
+.btn.critical:active {
+    background-color: rgb(165, 80, 49);
+    color: white;
 }

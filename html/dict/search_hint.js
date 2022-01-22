@@ -11,7 +11,7 @@ if (app_version.indexOf('Mac OS') != -1) client_os = MACOS
 if (app_version.indexOf('iPhone') != -1) client_os = IPHONE
 if (app_version.indexOf('Linux') != -1) client_os = LINUX
 
-function hide_search_hint () {
+hide_search_hint = () => {
     document.getElementById('search-instruction').style.display = 'none'
     document.getElementById('search-instruction').style.visibility = 'hidden'
 }
@@ -22,7 +22,7 @@ if (client_os == MACOS) document.write(`⌘`)
 if (client_os == IPHONE || client_os == UNKNOWN) hide_search_hint()
 
 // If shortcut is pressed, hint is hidden.
-document.onkeydown = function (e) {
+document.onkeydown = (e) => {
     if (e.key == 'f' || e.key == 'F')
         if (client_os == WINDOWS && e.ctrlKey ||
             client_os == MACOS && e.metaKey) {

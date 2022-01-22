@@ -16,54 +16,60 @@
     <header><a href="../../index.html">丘汉词典 Hili-Eng Dictionary</a></header>
 
     <div id="search-instruction">
+        <div id="search-hint-close-btn" onclick="hide_search_hint()">
+            <b>OK</b>
+        </div>
         <div id="control-key">
-            <script src="search_instruction.js"></script>
+            <script src="search_hint.js"></script>
         </div>
         <div id="F-key">F</div>
         <div id="search-label">
             查询
         </div>
-        <div id="search-instruction-close-btn"
-            onclick="hide_search_hint()">✖</div>
     </div>
 
     <div id="dictionary-panel">
-        <div class="btn btn-normal"
-            onclick="set_do_show_unknown_word(false)">
-            词典正文
+
+        <div class="setting">
+            <div class="setting-item">
+                显示未知词语 Showing unknown word
+            </div>
+            <div class="btn normal" onclick="set_do_show_unknown_word(false)">
+                否 No
+            </div>
+            <div class="btn normal" onclick="set_do_show_unknown_word(true)">
+                是 Yes
+            </div>
         </div>
-        
-        <div class="btn btn-normal"
-            onclick="set_do_show_unknown_word(true)">
-            显示未知词语
+
+        <div class="setting">
+            <div class="setting-item">
+                语言 Language
+            </div>
+            <div class="btn normal" onclick="set_lang('zh')">
+                中文
+            </div>
+
+            <div class="btn normal" onclick="set_lang('en')">
+                English
+            </div>
         </div>
-        
-        <div class="hr-blank"></div>
-        
-        <div class="btn btn-normal"
-            onclick="set_lang('zh')">
-            中文 Chinese
-        </div>
-        
-        <div class="btn btn-normal"
-            onclick="set_lang('en')">
-            English 英语
-        </div>
-        
-        <div class="hr-blank"></div>
-        
-        <div class="btn btn-critical"
-            onclick="reset(true)">
-            重置 Cookie
+
+        <div class="setting">
+            <div class="setting-item">
+                重置 Reset
+            </div>
+            <div class="btn critical" onclick="reset(true)">
+                Cookie
+            </div>
         </div>
     </div>
 
     <div id="dictionary-proper">
-        <!--词典正文-->
     </div>
-    
+
     <br><br><br><br><br><br><br><br><br>
-    
+
     <div class="dictionary-legend">
         <b style="font-size: 1.1rem;">图例</b><br>
         <div class="word-status-official">来自官方</div>
@@ -71,7 +77,7 @@
         <div class="word-status-folk">民间推测</div>
         <div class="word-status-none">暂无释义</div>
     </div>
-    
+
 </body>
 
 <script src="dict.js"></script>

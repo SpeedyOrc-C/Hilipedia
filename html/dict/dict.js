@@ -450,9 +450,11 @@ render_dictionary = (
 				part_of_speech = '[' + part_of_speech[lang] + ']'
 			
 			var translation = word_data['def'][def_i][lang]
+			if (translation === undefined)
+				translation = ''
 
 			proper_inner_html += `
-				<div class="word-definition">
+				<div class="word-definitions">
 					<div class="part-of-speech">
 						${part_of_speech}
 					</div>

@@ -1,23 +1,22 @@
 @import url(global.css);
 
-#dictionary-proper, #search-instruction, #dictionary-panel {
-    position: relative;
-    background-color: var(--article-bg-color);
-    box-shadow: var(--article-shadow);
-    
-    margin: 1rem auto;
-    padding: 1rem;
-    width: 30rem;
-}
 @media screen and (max-width: 960px) {
     #dictionary-proper {
         width: fit-content;
     }
 }
 
+#dictionary-proper,
+#search-instruction,
 #dictionary-panel {
-    width: fit-content;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 30rem;
+
+    background-color: var(--article-bg-color);
+    box-shadow: var(--article-shadow);
 }
+
 #search-instruction {
     width: fit-content;
     text-align: center;
@@ -74,24 +73,19 @@
     
     color: #333;
 }
-#search-instruction-close-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.5rem;
+#search-hint-close-btn {
+    float: right;
+    width: fit-content;
 
     cursor: pointer;
 
-    background-color: transparent;
-    color: #333;
-
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
     transition: color;
     transition-duration: 0.3s;
 }
-#search-instruction-close-btn:hover {
-    color: rgb(0, 119, 255);
-
-    transition: color;
+#search-hint-close-btn:hover {
+    color: coral;
     transition-duration: 0.1s;
 }
 
@@ -102,15 +96,18 @@
 }
 
 .the-word {
-    font-size: 1.5rem;
     color: #222;
+    font-size: 1.5rem;
+    font-family: var(--default-font);
 }
 .word-definitions, .word-examples {
+    color: #222;
     text-indent: 0.5rem;
+    font-family: var(--default-font);
 }
 .part-of-speech {
-    display: inline-block;
     color: #888;
+    display: inline-block;
 }
 .translation {
     display: inline-block;
@@ -148,7 +145,8 @@ code {
 
     position: fixed;
     bottom: 0;
-    padding: 1em;
+    padding: 1em 1.2em;
+    margin: 0.5em;
 
     user-select: none;
 }
