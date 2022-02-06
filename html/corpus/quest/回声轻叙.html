@@ -6,7 +6,7 @@
 
     <style>
         body {
-            background: linear-gradient(to bottom,#2dc4f6cc,#045f9fcc 100%);
+            background: linear-gradient(to bottom,#2dc4f6cc,#002e4ecc 100%);
         }
         article {
             position: relative;
@@ -17,30 +17,9 @@
             animation-timing-function: ease-in-out;
         }
         @keyframes paper-float {
-            0% {
-                top: 0rem;
-                left: -0.2rem;
-            }
-            20% {
-                top: -0.2rem;
-                left: 0rem;
-            }
-            40% {
-                top: 0rem;
-                left: 0.2rem;
-            }
-            60% {
-                top: 0.2rem;
-                left: 0rem;
-            }
-            80% {
-                top: 0rem;
-                left: -0.2rem;
-            }
-            100% {
-                top: 0rem;
-                left: -0.2rem;
-            }
+            0%      { top: 0.2rem; }
+            50%     { top: -0.2rem; }
+            100%    { top: 0.2rem; }
         }
     </style>
 </head>

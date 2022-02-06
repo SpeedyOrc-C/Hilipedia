@@ -1,6 +1,6 @@
 # Hilipedia
 
-🌎 English | **[中文](README.md)**
+🌎 English | **[简体中文](README.md)**
 
 ## Intro
 
@@ -18,9 +18,8 @@ Currently, only the dictionary is available in English.
 ## About the Dictionary
 
 Please notice, all the translation of the words can **be changed frequently**.  
-In the dictionary, Cookie is used to store the preference of setting. 
-This information will not be uploaded. If you find that the preference cannot
-be saved, please remove the cookie manually in your browser. 
+In the dictionary, Cookie is used to store your preference. 
+This information will not be uploaded. If you cannot save your preference, please remove the Cookie manually in your browser. 
 
 ## Support us
 

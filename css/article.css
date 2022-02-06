@@ -36,6 +36,14 @@ p {
 }
 a, a:visited {
     text-decoration: none;
+} a:hover {
+    background-color: #0002;
+    cursor: pointer;
+}
+.bvideo {
+    height: 30rem;
+    width: 100%;
+    resize: both;
 }
 sub, sup {
     font-size: 0.7rem;

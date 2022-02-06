@@ -23,6 +23,11 @@
     transition: transform, background-color;
     transition-duration: 0.1s;
 }
+
+.new-year-bg {
+    background-color: rgba(211, 144, 0, 0.2);
+}
+
 .corpus-article:hover {
     background-color: #0001;
     transform: translateX(0.2em);

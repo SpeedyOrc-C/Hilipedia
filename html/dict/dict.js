@@ -228,7 +228,7 @@ var DICTIONARY = {
 				{
 					"hil":"mosi dada",
 					"zh":"午餐", "en":"lunch",
-					"comment":{"zh":"好吃的饭谓之“午饭”", "en":"Delicious meal is called “lunch”"}
+					"comment":{"zh":"好吃的饭谓之“午餐”", "en":"Delicious meal is called “lunch”"}
 				},
 				{
 					"hil":"aba mosi dada",
@@ -242,7 +242,7 @@ var DICTIONARY = {
 				},
 				{
 					"hil":"mosi aba nunu",
-					"zh":"晚餐", "en":"dinner",
+					"zh":"傍晚", "en":"dusk",
 					"comment":{"zh":"吃睡觉前的饭的时间", "en":"Time before dinner"}
 				},
 				{

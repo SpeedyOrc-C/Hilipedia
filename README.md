@@ -1,6 +1,6 @@
 # Hilipedia
 
-🌏 **[English](README_en.md)** | 中文
+🌏 **[English](README_en.md)** | 简体中文
 
 ## 简介
 
@@ -10,16 +10,18 @@
 
 ## 访问速度慢？
 
-如果您的Github连接时好时坏，请访问该网页在[Gitee上的副本](https://chen_zhanming.gitee.io/hilipedia/)，这边的速度会快非常多。我会将Gitee仓库的内容与更新后的Github仓库同步，
+如果您的Github连接时好时坏，请访问该网页在
+[Gitee 上的副本](https://chen_zhanming.gitee.io/hilipedia/)，
+这边的速度会快非常多。我会将 Gitee 仓库的内容与更新后的 GitHub 仓库同步，
 如果出现两边不一致的情况，敬请刷新浏览器对该页面的缓存或耐心等待。
 
 ## 感谢提供支持者
 
 [吴松原](https://space.bilibili.com/25150765)  
-[白猫大人提不起劲](https://space.bilibili.com/425251)  
-[氟九紫蛤蟆](https://space.bilibili.com/28715153)  
-[冬至柠檬茶](https://space.bilibili.com/12539817)  
 [Ezie](https://space.bilibili.com/34988010)  
+[白猫大人提不起劲](https://space.bilibili.com/425251)  
+[冬至柠檬茶](https://space.bilibili.com/12539817)  
+[氟九紫蛤蟆](https://space.bilibili.com/28715153)（该账号已经注销，主页无法访问）  
 
 ----------
 
@@ -28,6 +30,10 @@
 请注意，任何词典条目中的内容会**不断变更**，**切勿盲目相信**。  
 另外，我们在词典中使用了 Cookie 来记录设置偏好，此信息不会被上传。
 如果您发现偏好无法被记录，请手动删除浏览器 Cookie。
+
+## 关于链接
+
+此处以及网站内的所有链接都不会对您进行跟踪。
 
 ## 给予帮助
 
@@ -45,6 +51,24 @@
 
 * **由于单词释义内容完全无法保证，千万别对此词典的内容作二次解读**。
 * **千万不要根据本词典制作翻译工具**
+
+----------
+
+## 本站的不正当性
+
+请注意，本站是不正当的！
+
+根据米哈游的[用户协议](https://ys.mihoyo.com/main/company/agreement)，
+其中第三节第九条第一项提到，用户不得做如下事情：
+
+> 复制、翻录、反编译(de-compile)、反汇编(disassemble)、传播和陈列米哈游游戏软件的程序、
+> 使用手册和其它图文音像资料的全部或部分内容，
+> 或对米哈游游戏软件的任何功能或程序进行反向工程(reverse engineering)。
+
+第三十六节还提到：
+
+> 米哈游不行使、未能及时行使或者未充分行使本协议或者按照法律规定所享有的权利，
+> 不应被视为放弃该权利，也不影响米哈游在将来行使该权利。
 
 <!-- 
 Gohus, chiso vonph. 
