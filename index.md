@@ -3,7 +3,7 @@
 ## 目录
 
 - [语料库](corpus/index.md)
-- [词典](dictionary/index.md)
+- [词典 / Dictionary / 辞書](dictionary/index.md)
 
 ## 源头
 
