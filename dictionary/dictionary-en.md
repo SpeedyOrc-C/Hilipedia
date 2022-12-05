@@ -261,6 +261,9 @@ v. take
 n. friend  
 
 ----------------------------------------
+**ulena**
+
+----------------------------------------
 **unta**  
 prep. after  
 a. backward
@@ -298,9 +301,6 @@ int. Goodbye
 n. wine (alcohol)  
 
 ***vin plata*** shield (Barrel as container of wine, its lid is used as shield in a battle.)  
-
-----------------------------------------
-**wulyena**  
 
 ----------------------------------------
 **ya**  
