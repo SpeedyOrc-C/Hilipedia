@@ -2,6 +2,16 @@
 
 ## 目录
 
+### `3.3` 六入尽明 诸相皆无
+
+- [《七圣召唤》中丘丘岩盔王的技能](text/Genius-Invokation-TCG-Stonehide-Lawachurl-skill.md)
+
+### `3.2` 虚空鼓动 劫火高扬
+
+### `3.1` 赤土之王与三朝圣者
+
+### `3.0` 千朵玫瑰带来的黎明
+
 ### `2.8` 仲夏！幻夜？奇想曲！
 
 - [幻声留形](quest/resonating-visions.md)
