@@ -224,6 +224,9 @@ n. outsider; stranger
 int. Hello; How are you?  
 
 ----------------------------------------
+**oto**
+
+----------------------------------------
 **plata**  
 v. attack  
 
