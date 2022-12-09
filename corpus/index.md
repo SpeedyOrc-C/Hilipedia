@@ -4,7 +4,7 @@
 
 ### `3.3` 六入尽明 诸相皆无
 
-- [《七圣召唤》中丘丘岩盔王的技能](text/Genius-Invokation-TCG-Stonehide-Lawachurl-skill.md)
+- [《七圣召唤》中丘丘岩盔王的技能](text/Genius-Invokation-TCG-Hilichurlian-skill.md)
 
 ### `3.2` 虚空鼓动 劫火高扬
 
