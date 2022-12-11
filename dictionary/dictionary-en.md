@@ -83,6 +83,9 @@ v. gather together; lie down
 ----------------------------------------
 **du**  
 n. two  
+ptcl. absolutive case marker; ergative case marker
+
+***Mi mito du ya mito Wei.*** I know there is someone knows Wei.
 
 ----------------------------------------
 **dudu**  
@@ -209,7 +212,7 @@ v. sleep
 
 ----------------------------------------
 **nya**  
-. refer to “nye”  
+Refer to “nye”  
 
 ----------------------------------------
 **nye**  
@@ -232,6 +235,7 @@ v. attack
 
 ----------------------------------------
 **plama**  
+v. throw; wave; actions about arm
 
 ----------------------------------------
 **pupu**  
@@ -250,6 +254,7 @@ int. ending word to intensify the manner of speaking
 
 ----------------------------------------
 **shato**  
+v. obstruct; cut off
 
 ----------------------------------------
 **tiga**  
@@ -304,6 +309,10 @@ int. Goodbye
 n. wine (alcohol)  
 
 ***vin plata*** shield (Barrel as container of wine, its lid is used as shield in a battle.)  
+
+----------------------------------------
+**Wei**  
+Liu Wei
 
 ----------------------------------------
 **ya**  
