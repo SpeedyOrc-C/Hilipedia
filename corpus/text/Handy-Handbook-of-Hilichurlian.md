@@ -16,7 +16,7 @@
 
 小提示: Dada upa 是好高/大山的意思。
 
-> Ika ya / Ika yaya / Ya ika / Yaya ika</h3>
+> Ika ya / Ika yaya / Ya ika / Yaya ika
 
 1. 一个坏人/坏人们！
 
